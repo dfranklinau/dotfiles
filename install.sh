@@ -12,7 +12,7 @@
 src=~/.dotfiles
 backup=~/.dotfiles_backup
 dest=~
-files=( ".bashrc" ".bash_profile" ".vimrc" ".gitconfig" )
+files=( ".bashrc" ".bash_profile" ".vimrc" ".gitconfig" ".git-completion.bash" ".git-prompt.sh" )
 
 
 # Warn the user about cleaning the '~/.dotfiles_backup' folder.
