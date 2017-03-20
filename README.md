@@ -25,10 +25,10 @@ cd ~/.dotfiles
 bash install.sh
 ```
 
-The installation script will create a symbolic for every dotfile within 
-`~/.dotfiles`. A simple back up process is included to prevent basic cases of 
-data loss. If a file already exists when creating a symbolic link the file will
-be moved to `~/.dotfiles_backup`.
+The installation script will create a symbolic link for all specified files 
+within `~/.dotfiles`. A simple back up process is included to prevent basic 
+cases of data loss. If a file already exists when creating a symbolic link the 
+file will be moved to `~/.dotfiles_backup`.
 
 
 About `.gitignore`
