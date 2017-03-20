@@ -21,7 +21,7 @@ Clone the repository to `~.dotfiles` and run the installation script:
 
 ```
 git clone git@github.com:dfranklinau/dotfiles.git ~/.dotfiles
-cd .dotfiles
+cd ~/.dotfiles
 bash install.sh
 ```
 
