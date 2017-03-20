@@ -4,14 +4,14 @@ dfranklinau dotfiles
 This is a collection of appropriately named “dotfiles” that I use on a
 day-to-day basis. The dotfiles included in this repository are:
 
-* `.gitconfig` - for Git aliases and essential configuration.
-* `.gitignore` - a boilerplate for ignoreable files (see **About `.gitignore`**)
-* `.vimrc` - for my personalised Vim configuration.
-* `.bashrc` - for a few helpful additions to Terminal (mostly for Git).
 * `.bash_profile` - redirects macOS to use `.bashrc` (No really, that’s it).
+* `.bashrc` - for a few helpful additions to Terminal (mostly for Git).
 * `.git-completion.bash` and `.git-prompt.sh` - helper scripts from the official
   Git repository to add useful functionality (see **`.git-completion.bash` and
   `.git-prompt.sh`**).
+* `.gitconfig` - for Git aliases and essential configuration.
+* `.gitignore` - a boilerplate for ignoreable files (see **About `.gitignore`**)
+* `.vimrc` - for my personalised Vim configuration.
 
 
 Installation
