@@ -41,6 +41,10 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:EditorConfig_core_mode = 'external_command'
 
 
+" Add an extra 40 characters of width to windows when changing.
+let g:eighties_extra_width = 40
+
+
 " Initial configuration.
 " [1] - Allow for traversal of directories in menus like :tabe.
 " [2] - Allow the 'Backspace' key to function as normal.
