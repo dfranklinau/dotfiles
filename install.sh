@@ -28,6 +28,10 @@ if [ -d $backup ]; then
 		exit 0
 	fi
 
+else
+
+	mkdir $backup
+
 fi
 
 
@@ -39,7 +43,7 @@ for file in ${files[@]}; do
 
 	if [ -f $dest/$file ]; then
 		echo "Oh, '~/.dotfiles/$file' already exists. Moving it to '~./dotfiles_backup/$file'."
-		mv $dest/$file $backup
+		mv $dest/$file $backup/
 	fi
 
 	ln -s $src/$file $dest/$file
