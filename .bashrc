@@ -7,4 +7,4 @@ source ~/.git-completion.bash
 # Enable the display of the current Git branch in the prompt.
 # [1] - Will change the prompt to read user@host:folder (branch)$
 source ~/.git-prompt.sh
-PROMPT_COMMAND='__git_ps1 "\u@\h:\W" "\\\$ "' # [1]
+export PROMPT_COMMAND="$PROMPT_COMMAND; __git_ps1 '\u@\h:\W' '\\\$ '" # [1]
