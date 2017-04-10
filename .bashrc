@@ -5,6 +5,12 @@ alias vim='/usr/local/bin/vim'
 source ~/.git-completion.bash
 
 # Enable the display of the current Git branch in the prompt.
-# [1] - Will change the prompt to read user@host:folder (branch)$
 source ~/.git-prompt.sh
-export PROMPT_COMMAND="$PROMPT_COMMAND; __git_ps1 '\u@\h:\W' '\\\$ '" # [1]
+
+# Modify the prompt command to include the current Git branch. And if
+# statement determines whether or not to use Apple_Terminal specific code.
+if [ $TERM_PROGRAM = 'Apple_Terminal' ]; then
+	export PROMPT_COMMAND="$PROMPT_COMMAND; __git_ps1 '\u@\h:\W' '\\\$ '" # [1]
+else
+	export PROMPT_COMMAND="$PROMPT_COMMAND __git_ps1 '\u@\h:\W' '\\\$ '" # [1]
+fi
