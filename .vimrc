@@ -104,6 +104,12 @@ set laststatus=2
 set noruler
 
 
+" Enable the zenburn Vim color scheme.
+" https://github.com/jnurmine/Zenburn
+set t_Co=256
+colors zenburn
+
+
 " Status line settings.
 " [1]  - Add error reporting for the Syntastic plugin.
 " [2]  - Display the file name (and add a hyphen separator)
