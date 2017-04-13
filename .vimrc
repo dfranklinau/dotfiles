@@ -66,8 +66,8 @@ set listchars=tab:→\ ,trail:·
 
 
 " Tab settings.
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 
 
 " Ruler settings.
@@ -122,7 +122,7 @@ colors zenburn
 " [8]  - Show the current soft and hard cursor column.
 " [9]  - Show the current cursor line and total lines.
 " [10] - Show the percentage scrolled.
-" [11] - Mark one tab as equalling 4 columns.
+" [11] - Mark the column value of one tab.
 " [12] - Make the status line slightly personalised with a colour.
 "        Use the following as a colour guide:
 "        http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
@@ -139,5 +139,5 @@ set statusline+=%y\                             " [7]
 set statusline+=%c%V:                           " [8]
 set statusline+=%l/%L                           " [9]
 set statusline+=\ %P                            " [10]
-set softtabstop=4                               " [11]
+set softtabstop=2                               " [11]
 hi StatusLine ctermfg=168 ctermbg=231           " [12]
