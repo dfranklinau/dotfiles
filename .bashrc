@@ -1,6 +1,9 @@
 # Use the Vim installed by Homebrew.
 alias vim='/usr/local/bin/vim'
 
+# Enable 256-color mode.
+export TERM=xterm-256color
+
 # Enable Git auto completion.
 source ~/.git-completion.bash
 
