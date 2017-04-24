@@ -1,6 +1,8 @@
 dfranklinau dotfiles
 ================================================================================
 
+_Warning: may or may not contain more than just dotfiles._
+
 This is a collection of appropriately named “dotfiles” that I use on a 
 day-to-day basis. The dotfiles included in this repository are:
 
@@ -11,8 +13,9 @@ day-to-day basis. The dotfiles included in this repository are:
    **`.git-completion.bash` and `.git-prompt.sh`**).
 * `.gitconfig` - for Git aliases and essential configuration.
 * `.gitignore` - a boilerplate for ignoreable files (see **About 
-   `.gitignore`**)
+   `.gitignore`**).
 * `.vimrc` - for my personalised Vim configuration.
+* `com.googlecode.iterm2.plist` - for configuring iTerm2.
 
 
 Installation
