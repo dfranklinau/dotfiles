@@ -9,7 +9,7 @@ day-to-day basis. The dotfiles included in this repository are:
 * `.bash_profile` - redirects macOS to use `.bashrc` (No really, that’s it).
 * `.bashrc` - for a few helpful additions to Terminal (mostly for Git).
 * `.git-completion.bash` and `.git-prompt.sh` - helper scripts from the 
-   official Git repository to add useful functionality (see 
+  official Git repository to add useful functionality (see 
    **`.git-completion.bash` and `.git-prompt.sh`**).
 * `.gitconfig` - for Git aliases and essential configuration.
 * `.gitignore` - a boilerplate for ignoreable files (see **About 
@@ -18,10 +18,13 @@ day-to-day basis. The dotfiles included in this repository are:
 * `com.googlecode.iterm2.plist` - for configuring iTerm2.
 
 
+
+
+
 Installation
 --------------------------------------------------------------------------------
 
-Clone the repository to `~.dotfiles` and run the installation script:
+Clone the repository to `~/.dotfiles` and run the installation script:
 
 ```
 git clone git@github.com:dfranklinau/dotfiles.git ~/.dotfiles
@@ -35,6 +38,9 @@ cases of data loss. If a file already exists when creating a symbolic link the
 file will be moved to `~/.dotfiles_backup`.
 
 
+
+
+
 Requirements
 --------------------------------------------------------------------------------
 
@@ -42,11 +48,22 @@ These files have not been tested anywhere but macOS so there may be some
 portability issues. That being said, at the end of the day these are _my_ 
 dotfiles.
 
-### Homebrew Vim
 
-I typically install Vim using Homebrew on macOS. For that reason, I add the 
-following line to the top of my `.bashrc` file so that I use Homebrew's 
-installed version of Vim over the default.
+### Vim
+
+I install a more up-to-date copy of Vim using Homebrew on macOS. I add the 
+following line to my `.bashrc` file so that I use Homebrew's installation of 
+Vim over the default:
+
+```
+alias vim='/usr/local/bin/vim'
+```
+
+I also use [Vim Plug](https://github.com/junegunn/vim-plug) as a plugin
+manager for Vim.
+
+
+
 
 
 About `.gitignore`
@@ -57,6 +74,9 @@ because I want to enforce the fact that global `.gitignore` files are a
 semi-bad practice. They are fine for personal projects but in team environments 
 it is preferred to include a local `.gitignore` with these rules to cater for 
 everyone.
+
+
+
 
 
 `.git-completion.bash` and `.git-prompt.sh`
