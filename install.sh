@@ -47,10 +47,10 @@ fi
 # files that may have the same filename in '~./dotfiles_backup'.
 for file in ${files[@]}; do
 
-	echo "Linking '~/.dotfiles/$file' to '~/.$file'..."
+	echo "Linking '~/.dotfiles/$file' to '~/$file'..."
 
 	if [ -f $dest/$file ]; then
-		echo "Oh, '~/.dotfiles/$file' already exists. Moving it to '~./dotfiles_backup/$file'."
+		echo "Oh, '$file' already exists. Moving it to '~./dotfiles_backup/$file'."
 		mv $dest/$file $backup/
 	fi
 
