@@ -1,6 +1,9 @@
 # Use the Vim installed by Homebrew.
 alias vim='/usr/local/bin/vim'
 
+# Use the Emacs installed by Homebrew.
+alias emacs='/usr/local/Cellar/emacs/25.2/Emacs.app/Contents/MacOS/Emacs -nw'
+
 # Enable 256-color mode.
 export TERM=xterm-256color
 

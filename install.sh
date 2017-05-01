@@ -15,6 +15,7 @@ dest=~
 files=(
 	".bashrc"
 	".bash_profile"
+	".emacs.d/init.el"
 	".gitconfig"
 	".git-completion.bash"
 	".git-prompt.sh"
