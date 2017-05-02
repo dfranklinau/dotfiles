@@ -287,9 +287,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>486 242 599 388 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>94 356 796 473 0 0 1440 877 </string>
+	<string>287 145 796 473 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>406 126 825 498 0 0 1440 877 </string>
+	<string>281 116 825 498 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -866,7 +866,7 @@
 			<key>Prompt Before Closing 2</key>
 			<false/>
 			<key>Right Option Key Sends</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Rows</key>
 			<integer>25</integer>
 			<key>Screen</key>
@@ -934,11 +934,11 @@
 	<key>NoSyncInstallationId</key>
 	<string>7CC225A0-5F5C-42C3-8824-3312F3911EA7</string>
 	<key>NoSyncLastTipTime</key>
-	<real>514677214.47557902</real>
+	<real>515375112.417225</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>NoSyncPermissionToShowTip</key>
 	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
@@ -947,6 +947,10 @@
 	<array>
 		<string>000</string>
 		<string>0000</string>
+		<string>0001</string>
+		<string>0002</string>
+		<string>0003</string>
+		<string>0004</string>
 	</array>
 	<key>OpenArrangementAtStartup</key>
 	<false/>
@@ -998,7 +1002,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-04-23T21:53:25Z</date>
+	<date>2017-05-01T23:45:12Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowBookmarkName</key>
