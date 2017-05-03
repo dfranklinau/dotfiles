@@ -287,9 +287,9 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>486 242 599 388 0 0 1440 900 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>287 145 796 473 0 0 1440 877 </string>
+	<string>276 359 796 473 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>281 116 825 498 0 0 1440 877 </string>
+	<string>6 73 1425 804 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -890,6 +890,15 @@
 				<real>0.1818312406539917</real>
 				<key>Red Component</key>
 				<real>0.15135367214679718</real>
+			</dict>
+			<key>Semantic History</key>
+			<dict>
+				<key>action</key>
+				<string>coprocess</string>
+				<key>editor</key>
+				<string>com.sublimetext.3</string>
+				<key>text</key>
+				<string>echo vim \1 + \2</string>
 			</dict>
 			<key>Send Code When Idle</key>
 			<false/>
