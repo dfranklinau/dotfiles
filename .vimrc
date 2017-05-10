@@ -70,14 +70,22 @@ set tabstop=2
 set shiftwidth=2
 
 
-" Ruler settings.
-set number
-set colorcolumn=80
-highlight ColorColumn ctermbg=2
-
-
 " Word wrap settings.
 set wrap
+set textwidth=80
+
+
+" Adjust the handling of textwidth and colorcolumns when writing a Git
+" commit message. Set the textwidth to 72 and add a second column for the
+" commit title (to 50 characters)
+" https://csswizardry.com/2017/03/configuring-git-and-vim/
+autocmd FileType gitcommit set textwidth=72
+autocmd FileType gitcommit set colorcolumn+=51
+
+
+" Ruler settings.
+set number
+set colorcolumn=+1
 
 
 " Syntax settings.
