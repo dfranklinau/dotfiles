@@ -112,7 +112,7 @@ set laststatus=2
 set noruler
 
 
-" Enable the zenburn Vim color scheme.
+" Enable the zenburn Vim color scheme and 256 color mode.
 " https://github.com/jnurmine/Zenburn
 set t_Co=256
 colors zenburn
