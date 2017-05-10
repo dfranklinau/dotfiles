@@ -6,6 +6,7 @@ _Warning: may or may not contain more than just dotfiles._
 This is a collection of appropriately named “dotfiles” that I use on a 
 day-to-day basis. The dotfiles included in this repository are:
 
+* `.ackrc` - configuration for [ack](https://beyondgrep.com)
 * `.bash_profile` - redirects macOS to use `.bashrc` (No really, that’s it).
 * `.bashrc` - for a few helpful additions to Terminal (mostly for Git).
 * `.git-completion.bash` and `.git-prompt.sh` - helper scripts from the 
