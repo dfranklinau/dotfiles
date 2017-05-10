@@ -13,6 +13,7 @@ src=~/.dotfiles
 backup=~/.dotfiles_backup
 dest=~
 files=(
+	".ackrc"
 	".bashrc"
 	".bash_profile"
 	".emacs.d/init.el"
