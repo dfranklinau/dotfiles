@@ -8,6 +8,7 @@ set nocompatible
 
 
 " vim-plug setup.
+" https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 
 " [1] - Add support for Emmet: http://emmet.io
