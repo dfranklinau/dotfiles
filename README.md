@@ -9,6 +9,7 @@ day-to-day basis. The dotfiles included in this repository are:
 * `.ackrc` - configuration for [ack](https://beyondgrep.com).
 * `.bash_profile` - redirects macOS to use `.bashrc` (No really, that’s it).
 * `.bashrc` - aliases, Git helpers and CLI customisation.
+* `.editorconfig` - configuration for [EditorConfig](http://editorconfig.org).
 * `.emacs.d` - a directory containing `init.el` with my configuration for Emacs
   (this is for Lisp development; Vim is my primary editor).
 * `.git-completion.bash` and `.git-prompt.sh` (see **`.git-completion.bash` and
