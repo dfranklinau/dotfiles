@@ -6,7 +6,7 @@
 	tags = tag --sort=taggerdate
 	tree = log --pretty=format:'%C(yellow)commit %H%Creset%C(green)%d%Creset%nCommitter: %cn <%ce>%n%n%w(50, 4, 4)%s%n%n%cr%n%n%w(72, 4, 4)%b' --graph
 	last = log -1
-	refresh = remote update
+	refresh = remote update --prune
 [core]
 	editor = /usr/bin/vim
 
