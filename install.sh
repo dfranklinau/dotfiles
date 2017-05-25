@@ -20,6 +20,7 @@ files=(
 	".gitconfig"
 	".git-completion.bash"
 	".git-prompt.sh"
+	".npmrc"
 	".vimrc"
 	"com.googlecode.iterm2.plist"
 )

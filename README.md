@@ -17,6 +17,7 @@ day-to-day basis. The dotfiles included in this repository are:
 * `.gitconfig` - aliases and configuration for Git.
 * `.gitignore` - a boilerplate for commonly ignored files (see **About
   `.gitignore`**).
+* `.npmrc` - configuration for npm package manager.
 * `.vimrc` - configuration for Vim.
 * `com.googlecode.iterm2.plist` - configuration for iTerm2.
 
