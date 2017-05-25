@@ -62,10 +62,8 @@ let g:eighties_extra_width = 40
 " Initial configuration.
 " [1] - Allow for traversal of directories in menus like :tabe.
 " [2] - Allow the 'Backspace' key to function as normal.
-" [3] - Change the directory to the current file when switching files.
 set wildmenu " [1]
 set backspace=indent,eol,start " [2]
-set autochdir " [3]
 set encoding=utf-8
 
 
