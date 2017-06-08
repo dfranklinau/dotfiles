@@ -151,7 +151,7 @@ colors zenburn
 " [12] - Make the status line slightly personalised with a colour.
 "        Use the following as a colour guide:
 "        http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
-set statusline+=%#warningmsg#                   " [1]
+set statusline=%#warningmsg#                   " [1]
 set statusline+=%{SyntasticStatuslineFlag()}    " [1]
 set statusline+=%*                              " [1]
 set statusline+=%f\ -\                          " [2]
