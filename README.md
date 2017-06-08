@@ -72,7 +72,7 @@ for Vim.
 I install a more up-to-date copy of Emacs via Hombrew on macOS. I add the
 following line to my `.bashrc` file so that I use Homebrew's installation of
 Emacs over the default, where `<version>` is the version of Emacs that Homebrew
-has installed::
+has installed:
 
 ```
 alias emacs='/usr/local/Cellar/emacs/<version>/Emacs.app/Contents/MacOS/Emacs -nw'
@@ -87,6 +87,19 @@ As part of running Lisp in Emacs I also install:
 * [SLIME](https://github.com/slime/slime/), via MELPA.
 
 
+### Themes
+
+I use the [Zenburn](http://kippura.org/zenburnpage/) for almost everything
+nowadays. I don't really know why, I just do. My Vim and Emacs configuration
+files set the theme to Zenburn but I do not include the required theme files in
+this repository.
+
+I have included links to installation instructions for Zenburn for each editor
+in the configuration files (i.e. `.vimrc`, `.emacs.d/init.el`).
+
+For fun, I used to use [Peacock](http://colorsublime.com/theme/Peacock) before 
+moving to [Spacegray](http://kkga.github.io/spacegray/), settling on Zenburn;
+for now.
 
 
 
