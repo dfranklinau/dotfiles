@@ -62,9 +62,12 @@ let g:eighties_extra_width = 40
 " Initial configuration.
 " [1] - Allow for traversal of directories in menus like :tabe.
 " [2] - Allow the 'Backspace' key to function as normal.
+" [3] - Set the minimum number of lines to appear above and below the cursor,
+"       where `so` stands for `scrolloff`.
 set wildmenu " [1]
 set backspace=indent,eol,start " [2]
 set encoding=utf-8
+set so=7
 
 
 " Filetype settings.
