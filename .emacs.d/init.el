@@ -14,6 +14,12 @@
 (require 'evil)
 
 
+;; Set location details for useful Sunrise/Sunset
+(setq calendar-latitude -27.4698)
+(setq calendar-longitude 153.0251)
+(setq calendar-location-name "Brisbane, QLD")
+
+
 ;; Set the lisp system and, optionally, some contribs.
 ;; https://github.com/slime/slime#quick-setup-instructions
 (setq inferior-lisp-program "/usr/local/bin/sbcl")
