@@ -18,6 +18,7 @@ call plug#begin('~/.vim/plugged')
 " [5] - Resize the window to 80 characters when shifting focus.
 " [6] - Text filtering and alignment (required by [7]).
 " [7] - Optimised syntax highlighting and rules for Markdown.
+" [8] - Show inline Git diff changes.
 Plug 'https://github.com/mattn/emmet-vim.git' " [1]
 Plug 'https://github.com/editorconfig/editorconfig-vim.git' " [2]
 Plug 'https://github.com/pangloss/vim-javascript.git' " [3]
@@ -25,6 +26,7 @@ Plug 'https://github.com/vim-syntastic/syntastic.git' " [4]
 Plug 'https://github.com/justincampbell/vim-eighties.git' " [5]
 Plug 'https://github.com/godlygeek/tabular.git' " [6]
 Plug 'https://github.com/plasticboy/vim-markdown.git' " [7]
+Plug 'https://github.com/airblade/vim-gitgutter.git' " [8]
 
 " Finish vim-plug setup.
 call plug#end()
