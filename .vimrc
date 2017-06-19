@@ -92,6 +92,10 @@ set wrap
 set textwidth=80
 
 
+" Auto indent alignment on new lines
+set smartindent
+
+
 " Adjust the handling of textwidth and colorcolumns when writing a Git
 " commit message. Set the textwidth to 72 and add a second column for the
 " commit title (to 50 characters)
