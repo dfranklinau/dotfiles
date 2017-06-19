@@ -10,9 +10,8 @@
 (package-initialize)
 
 
-;; Add Vim keybindings to Emacs.
+;; Add Vim keybindings to Emacs, but don't enable by default.
 (require 'evil)
-(evil-mode 1)
 
 
 ;; Set the lisp system and, optionally, some contribs.
