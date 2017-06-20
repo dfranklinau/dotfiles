@@ -136,31 +136,33 @@ colors zenburn
 " Status line settings.
 " [1]  - Add error reporting for the Syntastic plugin.
 " [2]  - Display the file name (and add a hyphen separator)
-" [2]  - Display file encoding.
-" [3]  - Add a flag if the file is a help file.
-" [4]  - Add a flag if the file is modified.
-" [5]  - Add a flag if the file is readonly.
-" [6]  - Shift remaining statusline edits to the right of the window.
-" [7]  - Display the filetype.
-" [8]  - Show the current soft and hard cursor column.
-" [9]  - Show the current cursor line and total lines.
-" [10] - Show the percentage scrolled.
-" [11] - Mark the column value of one tab.
-" [12] - Make the status line slightly personalised with a colour.
+" [3]  - Display file encoding.
+" [4]  - Add a flag if the file is a help file.
+" [5]  - Add a flag if the file is modified.
+" [6]  - Add a flag if the file is readonly.
+" [7]  - Shift remaining statusline edits to the right of the window.
+" [8]  - Display the current date and time.
+" [9]  - Display the filetype.
+" [10]  - Show the current soft and hard cursor column.
+" [11]  - Show the current cursor line and total lines.
+" [12] - Show the percentage scrolled.
+" [13] - Mark the column value of one tab.
+" [14] - Make the status line slightly personalised with a colour.
 "        Use the following as a colour guide:
 "        http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
-set statusline=%#warningmsg#                   " [1]
-set statusline+=%{SyntasticStatuslineFlag()}    " [1]
-set statusline+=%*                              " [1]
-set statusline+=%f\ -\                          " [2]
-set statusline+=[%{strlen(&fenc)?&fenc:'none'}] " [2]
-set statusline+=%h                              " [3]
-set statusline+=%m                              " [4]
-set statusline+=%r                              " [5]
-set statusline+=%=                              " [6]
-set statusline+=%y\                             " [7]
-set statusline+=%c%V:                           " [8]
-set statusline+=%l/%L                           " [9]
-set statusline+=\ %P                            " [10]
-set softtabstop=2                               " [11]
-hi StatusLine ctermfg=168 ctermbg=231           " [12]
+set statusline=%#warningmsg#                               " [1]
+set statusline+=%{SyntasticStatuslineFlag()}               " [1]
+set statusline+=%*                                         " [1]
+set statusline+=%f\ -\                                     " [2]
+set statusline+=[%{strlen(&fenc)?&fenc:'none'}]            " [3]
+set statusline+=%h                                         " [4]
+set statusline+=%m                                         " [5]
+set statusline+=%r                                         " [6]
+set statusline+=%=                                         " [7]
+set statusline+=%{strftime('%a\ %d/%m/%y\ %H:%M\ ')} " [8]
+set statusline+=%y\                                        " [9]
+set statusline+=%c%V:                                      " [10]
+set statusline+=%l/%L                                      " [11]
+set statusline+=\ %P                                       " [12]
+set softtabstop=2                                          " [13]
+hi StatusLine ctermfg=168 ctermbg=231                      " [14]
