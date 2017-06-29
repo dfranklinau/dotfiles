@@ -17,3 +17,7 @@ if [ $TERM_PROGRAM = 'Apple_Terminal' ]; then
 else
 	export PROMPT_COMMAND="$PROMPT_COMMAND __git_ps1 '\u@\h:\W' '\\\$ '" # [1]
 fi
+
+# Load nodenv, a Node.js version manager.
+# https://github.com/nodenv/nodenv
+eval "$(nodenv init -)"
