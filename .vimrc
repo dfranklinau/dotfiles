@@ -7,6 +7,12 @@
 set nocompatible
 
 
+
+
+
+" Plugins
+" =============================================================================
+
 " vim-plug setup.
 " https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
@@ -33,7 +39,8 @@ call plug#end()
 
 
 " Custom settings for Syntastic. These settings will disable the location list
-" that is typically used, but will still popluate errors.
+" that is typically used, but will still popluate errors. Three key remappings
+" have been added to navigate and run Syntastic checks (see "Key remapping").
 "
 " For more information, refer to the Syntastic settings:
 " https://github.com/vim-syntastic/syntastic#settings
@@ -60,8 +67,34 @@ let g:vim_markdown_new_list_item_indent = 2 " [2]
 let g:EditorConfig_core_mode = 'external_command'
 
 
-" Initial configuration.
-" [1] - Allow for traversal of directories in menus like :tabe.
+
+
+
+" Reading
+" =============================================================================
+
+" Readability settings.
+" [1] - Automatiicaly break lines by words, not by character.
+" [2] - Highlight search terms. (see "Key remapping" for shortcut to toggle
+"       search term highlighting.)
+set linebreak
+set hlsearch " [2]
+
+
+" Syntax settings.
+" [1] - Automatically set all Markdown extension variants to be read as
+"       Markdown files.
+syntax on
+au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=markdown " [1]
+
+
+
+
+
+" Editing
+" =============================================================================
+
+" [1] - Allow for traversal of directories in menus like `:tabe`.
 " [2] - Allow the 'Backspace' key to function as normal.
 " [3] - Set the minimum number of lines to appear above and below the cursor,
 "       where `so` stands for `scrolloff`.
@@ -93,6 +126,17 @@ set wrap
 set textwidth=80
 
 
+" Ruler settings.
+set number
+set colorcolumn=+1
+
+
+
+
+
+" Git
+" =============================================================================
+
 " Adjust the handling of textwidth and colorcolumns when writing a Git
 " commit message. Set the textwidth to 72 and add a second column for the
 " commit title (to 50 characters)
@@ -101,34 +145,29 @@ autocmd FileType gitcommit set textwidth=72
 autocmd FileType gitcommit set colorcolumn+=51
 
 
-" Ruler settings.
-set number
-set colorcolumn=+1
 
 
-" Syntax settings.
-" [1] - Automatically set all Markdown extension variants to be read as
-"       Markdown files.
-syntax on
-au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=markdown " [1]
+
+" Key remapping
+" =============================================================================
+
+" [1] - Search and replace shortcut for selected text
+" [2] - Display the next Syntastic error.
+" [3] - Display the previous Syntastic error.
+" [4] - Run a check with Syntastic.
+" [5] - Add a shortcut to remove highlighting by pressing 'Space'.
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left> " [1]
+nnoremap <C-n> :lnext<CR> " [2]
+nnoremap <C-p> :lprev<CR> " [3]
+nnoremap <C-w><C-e> :SyntasticCheck<CR> " [4]
+noremap <silent> <Space> :nohlsearch<Bar>:echo<CR> " [5]
 
 
-" Readability settings.
-" [1] - Highlight search terms.
-" [2] - Add a shortcut to remove highlighting by pressing 'Space'.
-set linebreak
-set hlsearch " [1]
-noremap <silent> <Space> :nohlsearch<Bar>:echo<CR> " [2] 
 
 
-" Search and replace shortcut for selected text
-vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 
-
-" Enable the statusline and hide the default ruler.
-set laststatus=2
-set noruler
-
+" Themes
+" =============================================================================
 
 " Enable the zenburn Vim color scheme and 256 color mode.
 " https://github.com/jnurmine/Zenburn
@@ -136,7 +175,16 @@ set t_Co=256
 colors zenburn
 
 
-" Status line settings.
+
+
+
+" Status line
+" =============================================================================
+
+" Enable the statusline and hide the default ruler.
+set laststatus=2
+set noruler
+
 " [1]  - Add error reporting for the Syntastic plugin.
 " [2]  - Display the file name (and add a hyphen separator)
 " [3]  - Display file encoding.
