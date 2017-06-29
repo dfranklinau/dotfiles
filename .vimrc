@@ -32,16 +32,19 @@ Plug 'https://github.com/airblade/vim-gitgutter.git' " [8]
 call plug#end()
 
 
-" Recommended settings for Syntastic.
+" Custom settings for Syntastic. These settings will disable the location list
+" that is typically used, but will still popluate errors.
+"
+" For more information, refer to the Syntastic settings:
 " https://github.com/vim-syntastic/syntastic#settings
 "
 " [1] - Enable lots of debugging for Syntastic.
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
-""let g:syntastic_debug = 3 " [1]
+" let g:syntastic_debug = 3 " [1]
 
 
 " Vim Markdown configuration
