@@ -86,7 +86,7 @@ au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=markdo
 set wildmenu " [1]
 set backspace=indent,eol,start " [2]
 set encoding=utf-8
-set so=7
+set so=7 " [3]
 
 
 " Filetype settings.
@@ -179,8 +179,8 @@ set noruler
 " [7]  - Shift remaining statusline edits to the right of the window.
 " [8]  - Display the current date and time.
 " [9]  - Display the filetype.
-" [10]  - Show the current soft and hard cursor column.
-" [11]  - Show the current cursor line and total lines.
+" [10] - Show the current soft and hard cursor column.
+" [11] - Show the current cursor line and total lines.
 " [12] - Show the percentage scrolled.
 " [13] - Mark the column value of one tab.
 " [14] - Make the status line slightly personalised with a colour.
@@ -195,7 +195,7 @@ set statusline+=%h                                         " [4]
 set statusline+=%m                                         " [5]
 set statusline+=%r                                         " [6]
 set statusline+=%=                                         " [7]
-set statusline+=%{strftime('%a\ %d/%m/%y\ %H:%M\ ')} " [8]
+set statusline+=%{strftime('%a\ %d/%m/%y\ %H:%M\ ')}       " [8]
 set statusline+=%y\                                        " [9]
 set statusline+=%c%V:                                      " [10]
 set statusline+=%l/%L                                      " [11]
