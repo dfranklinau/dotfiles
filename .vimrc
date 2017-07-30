@@ -151,16 +151,16 @@ autocmd FileType gitcommit set colorcolumn+=51
 " Key remapping
 " =============================================================================
 
-" [1] - Search and replace shortcut for selected text
-" [2] - Display the next Syntastic error.
-" [3] - Display the previous Syntastic error.
-" [4] - Run a check with Syntastic.
-" [5] - Add a shortcut to remove highlighting by pressing 'Space'.
-vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left> " [1]
-nnoremap <C-n> :lnext<CR> " [2]
-nnoremap <C-p> :lprev<CR> " [3]
-nnoremap <C-w><C-e> :SyntasticCheck<CR> " [4]
-noremap <silent> <Space> :nohlsearch<Bar>:echo<CR> " [5]
+" [C-r] - Search and replace shortcut for selected text
+" [C-n] - Display the next Syntastic error.
+" [C-p] - Display the previous Syntastic error.
+" [C-w C-e] - Run a check with Syntastic.
+" [Space] - Add a shortcut to remove highlighting by pressing 'Space'.
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+nnoremap <C-n> :lnext<CR>
+nnoremap <C-p> :lprev<CR>
+nnoremap <C-w><C-e> :SyntasticCheck<CR>
+noremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 
 
