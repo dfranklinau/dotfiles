@@ -98,7 +98,7 @@ filetype plugin indent on " [2]
 
 " Whitespace settings.
 set list
-set listchars=tab:→\ ,trail:·
+set listchars=tab:␣\ ,trail:·
 
 
 " Tab settings.
