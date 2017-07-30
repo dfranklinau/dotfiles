@@ -181,13 +181,12 @@ set noruler
 " [5]  - Add a flag if the file is modified.
 " [6]  - Add a flag if the file is readonly.
 " [7]  - Shift remaining statusline edits to the right of the window.
-" [8]  - Display the current date and time.
-" [9]  - Display the filetype.
-" [10] - Show the current soft and hard cursor column.
-" [11] - Show the current cursor line and total lines.
-" [12] - Show the percentage scrolled.
-" [13] - Mark the column value of one tab.
-" [14] - Make the status line slightly personalised with a colour.
+" [8]  - Display the filetype.
+" [9] - Show the current soft and hard cursor column.
+" [10] - Show the current cursor line and total lines.
+" [11] - Show the percentage scrolled.
+" [12] - Mark the column value of one tab.
+" [13] - Make the status line slightly personalised with a colour.
 "        Use the following as a colour guide:
 "        http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 set statusline=%#warningmsg#                               " [1]
@@ -199,10 +198,9 @@ set statusline+=%h                                         " [4]
 set statusline+=%m                                         " [5]
 set statusline+=%r                                         " [6]
 set statusline+=%=                                         " [7]
-set statusline+=%{strftime('%a\ %d/%m/%y\ %H:%M\ ')}       " [8]
-set statusline+=%y\                                        " [9]
-set statusline+=%c%V:                                      " [10]
-set statusline+=%l/%L                                      " [11]
-set statusline+=\ %P                                       " [12]
-set softtabstop=2                                          " [13]
-hi StatusLine ctermfg=168 ctermbg=231                      " [14]
+set statusline+=%y\                                        " [8]
+set statusline+=%c%V:                                      " [9]
+set statusline+=%l/%L                                      " [10]
+set statusline+=\ %P                                       " [11]
+set softtabstop=2                                          " [12]
+hi StatusLine ctermfg=168 ctermbg=231                      " [13]
