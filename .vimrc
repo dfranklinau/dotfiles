@@ -20,19 +20,13 @@ call plug#begin('~/.vim/plugged')
 " [1] - Add support for Emmet: http://emmet.io
 " [2] - Add support for EditorConfig: http://editorconfig.org
 " [3] - Add additional highlighting and syntax for JavaScript.
-" [4] - Add syntax checking on save.
-" [5] - Resize the window to 80 characters when shifting focus.
-" [6] - Text filtering and alignment (required by [7]).
-" [7] - Optimised syntax highlighting and rules for Markdown.
-" [8] - Show inline Git diff changes.
+" [4] - Add syntax checking.
+" [5] - Show inline Git diff changes.
 Plug 'https://github.com/mattn/emmet-vim.git' " [1]
 Plug 'https://github.com/editorconfig/editorconfig-vim.git' " [2]
 Plug 'https://github.com/pangloss/vim-javascript.git' " [3]
 Plug 'https://github.com/vim-syntastic/syntastic.git' " [4]
-Plug 'https://github.com/justincampbell/vim-eighties.git' " [5]
-Plug 'https://github.com/godlygeek/tabular.git' " [6]
-Plug 'https://github.com/plasticboy/vim-markdown.git' " [7]
-Plug 'https://github.com/airblade/vim-gitgutter.git' " [8]
+Plug 'https://github.com/airblade/vim-gitgutter.git' " [5]
 
 " Finish vim-plug setup.
 call plug#end()
@@ -52,15 +46,6 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint']
 " let g:syntastic_debug = 3 " [1]
-
-
-" Vim Markdown configuration
-" https://github.com/plasticboy/vim-markdown#options
-"
-" [1] - Fold all headings except h1 on file load.
-" [2] - Automatically indents new list items by 2 spaces (in my case, 1 tab).
-let g:vim_markdown_folding_style_pythonic = 1
-let g:vim_markdown_new_list_item_indent = 2 " [2]
 
 
 " Enable EditorConfig.
