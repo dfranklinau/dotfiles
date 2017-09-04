@@ -18,6 +18,11 @@ else
 	export PROMPT_COMMAND="$PROMPT_COMMAND __git_ps1 '\u@\h:\W' '\\\$ '" # [1]
 fi
 
+# Enable bash-completion, installed via Homebrew.
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+. $(brew --prefix)/etc/bash_completion
+fi
+
 # Load nodenv, a Node.js version manager.
 # https://github.com/nodenv/nodenv
 eval "$(nodenv init -)"
