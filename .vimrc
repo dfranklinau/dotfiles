@@ -123,6 +123,17 @@ set cursorline " [1]
 
 
 
+
+" File-specific settings
+" =============================================================================
+
+autocmd FileType json set expandtab tabstop=4 shiftwidth=2
+autocmd FileType python set expandtab tabstop=8 shiftwidth=4
+
+
+
+
+
 " Git
 " =============================================================================
 
