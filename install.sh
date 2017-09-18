@@ -6,6 +6,10 @@
 #
 # To install, clone the dotfiles repository to `~/.dotfiles`, enter the
 # directory and run `bash install.sh`.
+#
+# Due to incompetence, any nested files will need their respective parent
+# directories to be created before they can be properly linked. `ln` will throw
+# an error for any files whose parent directories do not exist.
 ################################################################################
 
 
@@ -20,6 +24,9 @@ files=(
 	".git-completion.bash"
 	".git-prompt.sh"
 	".vimrc"
+	".vim/ftplugin/javascript/json.vim"
+	".vim/ftplugin/python/python.vim"
+	".vim/ftplugin/markdown/markdown.vim"
 	"com.googlecode.iterm2.plist"
 )
 
