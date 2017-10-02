@@ -120,11 +120,6 @@ set number
 set colorcolumn=+1
 
 
-" Cursor settings.
-" [1] - Highlight the current line.
-set cursorline " [1]
-
-
 
 
 
