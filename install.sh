@@ -16,7 +16,7 @@
 src=~/.dotfiles
 backup=~/.dotfiles_backup
 dest=~
-files=(
+dotfiles=(
 	".ackrc"
 	".bashrc"
 	".bash_profile"
@@ -53,18 +53,18 @@ fi
 
 # Create a symbolic link from '~/.dotfiles' to '~/' for all files. Backup any
 # files that may have the same filename in '~./dotfiles_backup'.
-for file in ${files[@]}; do
+for dotfile in ${dotfiles[@]}; do
 
-	echo "Linking '~/.dotfiles/$file' to '~/$file'..."
+	echo "Linking '~/.dotfiles/$dotfile' to '~/$dotfile'..."
 
-	if [ -f $dest/$file ]; then
-		echo "Oh, '$file' already exists. Moving it to '~./dotfiles_backup/$file'."
-		mv $dest/$file $backup/
+	if [ -f $dest/$dotfile ]; then
+		echo "Oh, '$dotfile' already exists. Moving it to '~./dotfiles_backup/$dotfile'."
+		mv $dest/$dotfile $backup/
 	fi
 
-	ln -s $src/$file $dest/$file
+	ln -s $src/$dotfile $dest/$dotfile
 
-	echo "Linked '~/.dotfiles/$file'."
+	echo "Linked '~/.dotfiles/$dotfile'."
 	echo # Add a blank line for breathing space.
 
 done
