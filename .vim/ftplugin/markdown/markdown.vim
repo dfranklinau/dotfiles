@@ -6,9 +6,6 @@
 " Reading
 " =============================================================================
 
-" Remove line numbers from Markdown since these documents focus on prose.
-setlocal nonumber
-
 " Set the spell check in Vim to English (UK). (Only available in Vim 7.)
 setlocal spell spelllang=en_gb
 
