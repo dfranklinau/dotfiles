@@ -24,9 +24,9 @@ dotfiles=(
 	".git-completion.bash"
 	".git-prompt.sh"
 	".vimrc"
-	".vim/ftplugin/javascript/json.vim"
-	".vim/ftplugin/python/python.vim"
-	".vim/ftplugin/markdown/markdown.vim"
+	".vim/autoload"
+	".vim/colors"
+	".vim/ftplugin"
 	"com.googlecode.iterm2.plist"
 )
 
