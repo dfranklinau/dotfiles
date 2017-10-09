@@ -104,10 +104,13 @@ set listchars=tab:␣\ ,trail:·
 
 
 " Tab settings.
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set autoindent
+" [1] - Use two space indentation for easier readibility.
+" [2] - Basic indentation enforcement, just in case.
+setlocal expandtab " [1]
+setlocal tabstop=2 " [1]
+setlocal softtabstop=2 " [1]
+setlocal shiftwidth=2 " [1]
+setlocal autoindent " [2]
 
 
 " Word wrap settings.
