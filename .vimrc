@@ -20,36 +20,20 @@ call plug#begin('~/.vim/plugged')
 " [1] - Add support for Emmet: http://emmet.io
 " [2] - Add support for EditorConfig: http://editorconfig.org
 " [3] - Add additional highlighting and syntax for JavaScript.
-" [4] - Add syntax checking.
+" [4] - Add asynchronous syntax checking.
 " [5] - Show inline Git diff changes.
 " [6] - Better Python indentation.
 " [7] - Add a distraction free mode.
 Plug 'https://github.com/mattn/emmet-vim.git' " [1]
 Plug 'https://github.com/editorconfig/editorconfig-vim.git' " [2]
 Plug 'https://github.com/pangloss/vim-javascript.git' " [3]
-Plug 'https://github.com/vim-syntastic/syntastic.git' " [4]
+Plug 'https://github.com/w0rp/ale' " [4]
 Plug 'https://github.com/airblade/vim-gitgutter.git' " [5]
 Plug 'https://github.com/vim-scripts/indentpython.vim.git' " [6]
 Plug 'https://github.com/junegunn/goyo.vim' " [7]
 
 " Finish vim-plug setup.
 call plug#end()
-
-
-" Custom settings for Syntastic. These settings will disable the location list
-" that is typically used, but will still popluate errors. Three key remappings
-" have been added to navigate and run Syntastic checks (see "Key remapping").
-"
-" For more information, refer to the Syntastic settings:
-" https://github.com/vim-syntastic/syntastic#settings
-"
-" [1] - Enable lots of debugging for Syntastic.
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-let g:syntastic_javascript_checkers = ['eslint']
-" let g:syntastic_debug = 3 " [1]
 
 
 " Enable EditorConfig.
@@ -146,14 +130,8 @@ autocmd FileType gitcommit set colorcolumn+=51
 " =============================================================================
 
 " [C-r] - Search and replace shortcut for selected text
-" [C-n] - Display the next Syntastic error.
-" [C-p] - Display the previous Syntastic error.
-" [C-w C-e] - Run a check with Syntastic.
 " [Space] - Add a shortcut to remove highlighting by pressing 'Space'.
 vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
-nnoremap <C-n> :lnext<CR>
-nnoremap <C-p> :lprev<CR>
-nnoremap <C-w><C-e> :SyntasticCheck<CR>
 noremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 
@@ -179,33 +157,29 @@ colors zenburn
 set laststatus=2
 set noruler
 
-" [1]  - Add error reporting for the Syntastic plugin.
-" [2]  - Display the file name (and add a hyphen separator)
-" [3]  - Display file encoding.
-" [4]  - Add a flag if the file is a help file.
-" [5]  - Add a flag if the file is modified.
-" [6]  - Add a flag if the file is readonly.
-" [7]  - Shift remaining statusline edits to the right of the window.
-" [8]  - Display the filetype.
-" [9] - Show the current soft and hard cursor column.
-" [10] - Show the current cursor line and total lines.
-" [11] - Show the percentage scrolled.
-" [12] - Mark the column value of one tab.
-" [13] - Make the status line slightly personalised with a colour.
+" [1]  - Display the file name (and add a hyphen separator)
+" [2]  - Display file encoding.
+" [3]  - Add a flag if the file is a help file.
+" [4]  - Add a flag if the file is modified.
+" [5]  - Add a flag if the file is readonly.
+" [6]  - Shift remaining statusline edits to the right of the window.
+" [7]  - Display the filetype.
+" [8] - Show the current soft and hard cursor column.
+" [9] - Show the current cursor line and total lines.
+" [10] - Show the percentage scrolled.
+" [11] - Mark the column value of one tab.
+" [12] - Make the status line slightly personalised with a colour.
 "        Use the following as a colour guide:
 "        http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
-set statusline=%#warningmsg#                               " [1]
-set statusline+=%{SyntasticStatuslineFlag()}               " [1]
-set statusline+=%*                                         " [1]
-set statusline+=%f\ -\                                     " [2]
-set statusline+=[%{strlen(&fenc)?&fenc:'none'}]            " [3]
-set statusline+=%h                                         " [4]
-set statusline+=%m                                         " [5]
-set statusline+=%r                                         " [6]
-set statusline+=%=                                         " [7]
-set statusline+=%y\                                        " [8]
-set statusline+=%c%V:                                      " [9]
-set statusline+=%l/%L                                      " [10]
-set statusline+=\ %P                                       " [11]
-set softtabstop=2                                          " [12]
-hi StatusLine ctermfg=168 ctermbg=231                      " [13]
+set statusline+=%f\ -\                                     " [1]
+set statusline+=[%{strlen(&fenc)?&fenc:'none'}]            " [2]
+set statusline+=%h                                         " [3]
+set statusline+=%m                                         " [4]
+set statusline+=%r                                         " [5]
+set statusline+=%=                                         " [6]
+set statusline+=%y\                                        " [7]
+set statusline+=%c%V:                                      " [8]
+set statusline+=%l/%L                                      " [9]
+set statusline+=\ %P                                       " [10]
+set softtabstop=2                                          " [11]
+hi StatusLine ctermfg=168 ctermbg=231                      " [12]
