@@ -23,12 +23,14 @@ call plug#begin('~/.vim/plugged')
 " [4] - Add syntax checking.
 " [5] - Show inline Git diff changes.
 " [6] - Better Python indentation.
+" [7] - Add a distraction free mode.
 Plug 'https://github.com/mattn/emmet-vim.git' " [1]
 Plug 'https://github.com/editorconfig/editorconfig-vim.git' " [2]
 Plug 'https://github.com/pangloss/vim-javascript.git' " [3]
 Plug 'https://github.com/vim-syntastic/syntastic.git' " [4]
 Plug 'https://github.com/airblade/vim-gitgutter.git' " [5]
 Plug 'https://github.com/vim-scripts/indentpython.vim.git' " [6]
+Plug 'https://github.com/junegunn/goyo.vim' " [7]
 
 " Finish vim-plug setup.
 call plug#end()
