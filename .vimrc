@@ -48,7 +48,7 @@ let g:EditorConfig_core_mode = 'external_command'
 
 " Readability settings.
 " [1] - Automatiicaly break lines by words, not by character.
-" [2] - Highlight search terms. (see "Key remapping" for shortcut to toggle
+" [2] - Highlight search terms. (see 'Key remapping' for shortcut to toggle
 "       search term highlighting.)
 set linebreak
 set hlsearch " [2]
