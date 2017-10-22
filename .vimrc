@@ -24,6 +24,7 @@ call plug#begin('~/.vim/plugged')
 " [5] - Show inline Git diff changes.
 " [6] - Better Python indentation.
 " [7] - Add a distraction free mode.
+" [8] - Jina2 syntax (i.e. Nunjucks)
 Plug 'https://github.com/mattn/emmet-vim.git' " [1]
 Plug 'https://github.com/editorconfig/editorconfig-vim.git' " [2]
 Plug 'https://github.com/pangloss/vim-javascript.git' " [3]
@@ -31,6 +32,7 @@ Plug 'https://github.com/w0rp/ale' " [4]
 Plug 'https://github.com/airblade/vim-gitgutter.git' " [5]
 Plug 'https://github.com/vim-scripts/indentpython.vim.git' " [6]
 Plug 'https://github.com/junegunn/goyo.vim' " [7]
+Plug 'https://github.com/Glench/Vim-Jinja2-Syntax' " [8]
 
 " Finish vim-plug setup.
 call plug#end()
@@ -57,8 +59,11 @@ set hlsearch " [2]
 " Syntax settings.
 " [1] - Automatically set all Markdown extension variants to be read as
 "       Markdown files.
+" [1] - Automatically set all Nunjucks extension variants to be read as
+"       containing Jinja syntax. (see http://jinja.pocoo.org/)
 syntax on
 au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=markdown " [1]
+au BufNewFile,BufRead *.njk,*.nunjucks  set ft=jinja " [2]
 
 
 
