@@ -13,9 +13,9 @@ source ~/.git-prompt.sh
 # Modify the prompt command to include the current Git branch. And if
 # statement determines whether or not to use Apple_Terminal specific code.
 if [ $TERM_PROGRAM = 'Apple_Terminal' ]; then
-	export PROMPT_COMMAND="$PROMPT_COMMAND; __git_ps1 '\u@\h:\W' '\\\$ '" # [1]
+  export PROMPT_COMMAND="$PROMPT_COMMAND; __git_ps1 '\u@\h:\W' '\\\$ '" # [1]
 else
-	export PROMPT_COMMAND="$PROMPT_COMMAND __git_ps1 '\u@\h:\W' '\\\$ '" # [1]
+  export PROMPT_COMMAND="$PROMPT_COMMAND __git_ps1 '\u@\h:\W' '\\\$ '" # [1]
 fi
 
 # Enable bash-completion, installed via Homebrew.
