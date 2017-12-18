@@ -1,0 +1,15 @@
+[submodule ".vim/pack/dfranklinau/start/editorconfig-vim"]
+	path = .vim/pack/dfranklinau/start/editorconfig-vim
+	url = https://github.com/editorconfig/editorconfig-vim
+[submodule ".vim/pack/dfranklinau/start/vim-javascript"]
+	path = .vim/pack/dfranklinau/start/vim-javascript
+	url = https://github.com/pangloss/vim-javascript
+[submodule ".vim/pack/dfranklinau/start/ale"]
+	path = .vim/pack/dfranklinau/start/ale
+	url = https://github.com/w0rp/ale
+[submodule ".vim/pack/dfranklinau/start/vim-gitgutter"]
+	path = .vim/pack/dfranklinau/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule ".vim/pack/dfranklinau/start/emmet-vim"]
+	path = .vim/pack/dfranklinau/start/emmet-vim
+	url = https://github.com/mattn/emmet-vim

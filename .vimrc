@@ -13,33 +13,6 @@ set nocompatible
 " Plugins
 " =============================================================================
 
-" vim-plug setup.
-" https://github.com/junegunn/vim-plug
-call plug#begin('~/.vim/plugged')
-
-" [1] - Add support for Emmet: http://emmet.io
-" [2] - Add support for EditorConfig: http://editorconfig.org
-" [3] - Add additional highlighting and syntax for JavaScript.
-" [4] - Add asynchronous syntax checking.
-" [5] - Show inline Git diff changes.
-" [6] - Better Python indentation.
-" [7] - Add a distraction free mode.
-" [8] - Jina2 syntax (i.e. Nunjucks).
-" [9] - Syntax highlight for Vue.js components.
-Plug 'https://github.com/mattn/emmet-vim.git' " [1]
-Plug 'https://github.com/editorconfig/editorconfig-vim.git' " [2]
-Plug 'https://github.com/pangloss/vim-javascript.git' " [3]
-Plug 'https://github.com/w0rp/ale' " [4]
-Plug 'https://github.com/airblade/vim-gitgutter.git' " [5]
-Plug 'https://github.com/vim-scripts/indentpython.vim.git' " [6]
-Plug 'https://github.com/junegunn/goyo.vim' " [7]
-Plug 'https://github.com/Glench/Vim-Jinja2-Syntax' " [8]
-Plug 'https://github.com/posva/vim-vue' " [9]
-
-" Finish vim-plug setup.
-call plug#end()
-
-
 " Enable EditorConfig.
 let g:EditorConfig_core_mode = 'external_command'
 
@@ -61,11 +34,8 @@ set hlsearch " [2]
 " Syntax settings.
 " [1] - Automatically set all Markdown extension variants to be read as
 "       Markdown files.
-" [1] - Automatically set all Nunjucks extension variants to be read as
-"       containing Jinja syntax. (see http://jinja.pocoo.org/)
 syntax on
 au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=markdown " [1]
-au BufNewFile,BufRead *.njk,*.nunjucks  set ft=jinja " [2]
 
 
 
