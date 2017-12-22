@@ -1,5 +1,5 @@
 " =============================================================================
-" Daniel's Vim Configuration of wonder
+" Daniel's Vim configuration of wonder
 " =============================================================================
 
 
@@ -24,7 +24,7 @@ let g:EditorConfig_core_mode = 'external_command'
 " =============================================================================
 
 " Readability settings.
-" [1] - Automatiicaly break lines by words, not by character.
+" [1] - Automatically break lines by words, not by character.
 " [2] - Highlight search terms. (see 'Key remapping' for shortcut to toggle
 "       search term highlighting.)
 set linebreak
@@ -81,7 +81,7 @@ set listchars=tab:␣\ ,trail:·
 
 
 " Tab settings.
-" [1] - Use two space indentation for easier readibility.
+" [1] - Use two space indentation for easier readability.
 " [2] - Basic indentation enforcement, just in case.
 setlocal expandtab " [1]
 setlocal tabstop=2 " [1]
@@ -106,8 +106,8 @@ set colorcolumn=+1
 " Git
 " =============================================================================
 
-" Adjust the handling of textwidth and colorcolumns when writing a Git
-" commit message. Set the textwidth to 72 and add a second column for the
+" Adjust the handling of `textwidth` and `colorcolumns` when writing a Git
+" commit message. Set the `textwidth` to 72 and add a second column for the
 " commit title (to 50 characters)
 " https://csswizardry.com/2017/03/configuring-git-and-vim/
 autocmd FileType gitcommit set textwidth=72
@@ -132,7 +132,7 @@ noremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 " Themes
 " =============================================================================
 
-" Enable the zenburn Vim color scheme and 256 color mode.
+" Enable the Zenburn Vim colour scheme and 256 colour mode.
 " https://github.com/jnurmine/Zenburn
 set t_Co=256
 colors zenburn
@@ -144,7 +144,7 @@ colors zenburn
 " Status line
 " =============================================================================
 
-" Enable the statusline and hide the default ruler.
+" Enable the `statusline` and hide the default ruler.
 set laststatus=2
 set noruler
 
@@ -152,8 +152,8 @@ set noruler
 " [2]  - Display file encoding.
 " [3]  - Add a flag if the file is a help file.
 " [4]  - Add a flag if the file is modified.
-" [5]  - Add a flag if the file is readonly.
-" [6]  - Shift remaining statusline edits to the right of the window.
+" [5]  - Add a flag if the file is read only.
+" [6]  - Shift remaining `statusline` edits to the right of the window.
 " [7]  - Display the filetype.
 " [8] - Show the current soft and hard cursor column.
 " [9] - Show the current cursor line and total lines.
