@@ -31,6 +31,20 @@ set linebreak
 set hlsearch " [2]
 
 
+" Set the spell check in Vim to English, Australia. Only available in Vim
+" versions 7 or higher. To regenerate the spell file, run:
+"
+" ```
+" mkspell! .vim/spell/en.utf-8.add
+" ```
+"
+" [1] - Prevent URLs from being spell checked.
+" [2] - Prevent inline code (between backticks) from being spell checked.
+set spell spelllang=en_au
+syn match UrlNoSpell '\w\+:\/\/[^[:space:]]\+' contains=@NoSpell " [1]
+syn match InlineCodeNoSpell '`.*[^`]`' contains=@NoSpell " [2]
+
+
 " Syntax settings.
 " [1] - Automatically set all Markdown extension variants to be read as
 "       Markdown files.

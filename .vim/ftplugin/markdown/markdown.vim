@@ -3,16 +3,6 @@
 " =============================================================================
 
 
-" Reading
-" =============================================================================
-
-" Set the spell check in Vim to English (UK). (Only available in Vim 7.)
-setlocal spell spelllang=en_gb
-
-
-
-
-
 " Editing
 " =============================================================================
 
@@ -23,4 +13,3 @@ setlocal tabstop=2 " [1]
 setlocal softtabstop=2 " [1]
 setlocal shiftwidth=2 " [1]
 setlocal autoindent " [2]
-
