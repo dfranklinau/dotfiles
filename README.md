@@ -30,13 +30,20 @@ Clone the repository to `~/.dotfiles` and run the installation script:
 ```
 git clone git@github.com:dfranklinau/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
+git submodule init
+git submodule update
 bash install.sh
 ```
 
-The installation script will create a symbolic link for all specified files
-within `~/.dotfiles`. A simple back up process is included to prevent basic
-cases of data loss. If a file already exists when creating a symbolic link the
-file will be moved to `~/.dotfiles_backup`.
+Git submodules are used for managing Vim plugins.
+
+The installation script creates symbolic links for a list of files and folders
+within `~/.dotfiles`. If a file or folder already exists when creating a
+symbolic link the file will be moved to `~/.dotfiles_backup`.
+
+In the case of pre-existing folders, it is easier to manually move the folders
+to another location and then run the installation script otherwise the symbolic
+link may fail.
 
 
 
