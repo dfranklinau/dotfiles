@@ -5,11 +5,8 @@
 # located in `~/.dotfiles`.
 #
 # To install, clone the dotfiles repository to `~/.dotfiles`, enter the
-# directory and run `bash install.sh`.
-#
-# Due to incompetence, any nested files will need their respective parent
-# directories to be created before they can be properly linked. `ln` will throw
-# an error for any files whose parent directories do not exist.
+# directory and run `bash install.sh`. If errors arise from creating links, the
+# target directory may need to be removed.
 ################################################################################
 
 
