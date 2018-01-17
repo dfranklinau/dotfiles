@@ -13,3 +13,6 @@
 [submodule ".vim/pack/dfranklinau/start/emmet-vim"]
   path = .vim/pack/dfranklinau/start/emmet-vim
   url = https://github.com/mattn/emmet-vim
+[submodule ".vim/pack/dfranklinau/start/vim-surround"]
+	path = .vim/pack/dfranklinau/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
