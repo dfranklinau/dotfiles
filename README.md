@@ -55,16 +55,46 @@ Requirements and initial configuration
 * Vim version 8 or higher to use native Vim plugin management
 
 
-### Vim configuration
+### Useful Homebrew packages
 
-I install Vim via Homebrew. The following line has been added to `.bashrc` so
-that Homebrew's installation of Vim 8 is used instead of the default:
+#### Text editors
+
+Since macOS ships with slightly old instances of Emacs and Vim the latest
+versions can be installed via Homebrew.
 
 ```
-alias vim='/usr/local/bin/vim'
+brew install emacs
+brew install vim
 ```
 
+`/usr/local/bin` needs to be defined before `/usr/bin` in the `$PATH` variable
+for Homebrew versions to be loaded instead of the defaults when executed from
+the command line.
 
+
+
+
+#### Utilities
+
+```
+brew install ack
+brew install bash-completion
+brew install editorconfig
+brew install nodenv
+brew install tidy-html5
+brew install pandoc
+```
+
+- [ack](https://beyondgrep.com) is used for searching through files.
+- [`bash-completion`](https://github.com/scop/bash-completion) is used for
+  adding auto completion support for various command line tools (e.g. Docker).
+- [editorconfig](https://github.com/editorconfig/editorconfig-core-c/) is used
+  to enable EditorConfig in Vim.
+- [nodenv](https://github.com/nodenv/nodenv/) is used for managing multiple
+  versions of Node.js.
+- [`tidy-html5`](http://www.html-tidy.org) is for use with
+  [Ale](https://github.com/w0rp/ale/) in Vim.
+- [`pandoc`](http://pandoc.org) is a neat document conversion tool.
 
 
 
