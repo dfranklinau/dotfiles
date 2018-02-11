@@ -124,10 +124,17 @@ autocmd FileType gitcommit set colorcolumn+=51
 " Key remapping
 " =============================================================================
 
+" nmap - Remappings for Vim's normal mode.
+" vnmap - Remappings for Vim's visual mode.
+
 " [C-r] - Search and replace shortcut for selected text
+" [C-k] - Go the previous ALE error.
+" [C-j] - Go the next ALE error.
 " [Space] - Add a shortcut to remove highlighting by pressing 'Space'.
-vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
-noremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+vmap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
+nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 
 
