@@ -36,12 +36,9 @@ bash install.sh
 Git submodules are used for managing Vim plugins.
 
 The installation script creates symbolic links for a list of files and folders
-within `~/.dotfiles`. If a file or folder already exists when creating a
-symbolic link the file will be moved to `~/.dotfiles_backup`.
-
-In the case of pre-existing folders, it is easier to manually move the folders
-to another location and then run the installation script otherwise the symbolic
-link may fail.
+within `~/.dotfiles`. It is recommended that the `.vim` folder is manually
+backed up and removed before installation. (This is purely to prevent anything
+stuffing up, since I'm too lazy to handle existing folders right now.)
 
 
 
