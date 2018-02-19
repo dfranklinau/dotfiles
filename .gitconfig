@@ -1,8 +1,13 @@
 [alias]
-  st = status
-  ch = checkout
-  br = branch
   c = commit
+  s = status
+  ch = checkout
+  b = branch
+  re = rebase
+  ap = add --patch
+  nope = checkout -- .
+  undo = reset --soft HEAD~
+  lost = reset --hard HEAD~
   tags = tag --sort=taggerdate
   tree = log --pretty=format:'%C(yellow)commit %H%Creset%C(green)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%cr%n%n%b' --graph
   last = log -1
