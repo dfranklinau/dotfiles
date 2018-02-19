@@ -61,9 +61,11 @@ Since macOS ships with slightly old instances of Emacs and Vim the latest
 versions can be installed via Homebrew.
 
 ```
-brew install emacs
+brew install emacs --with-cocoa
 brew install vim
 ```
+
+…where the `--with-cocoa` flag installs the GNU version of Emacs.
 
 `/usr/local/bin` needs to be defined before `/usr/bin` in the `$PATH` variable
 for Homebrew versions to be loaded instead of the defaults when executed from
