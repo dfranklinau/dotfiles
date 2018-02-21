@@ -1,9 +1,10 @@
 [alias]
   c = commit
-  s = status
+  s = status -u
   ch = checkout
   b = branch
   re = rebase
+  a = add
   ap = add --patch
   nope = checkout -- .
   undo = reset --soft HEAD~
