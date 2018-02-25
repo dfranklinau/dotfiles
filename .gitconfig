@@ -1,17 +1,22 @@
 [alias]
-  c = commit
-  s = status -u
-  ch = checkout
-  b = branch
-  re = rebase
   a = add
+  aa = add .
   ap = add --patch
-  nope = checkout -- .
+  b = branch
+  c = commit
+  ca = commit --amend
+  ch = checkout
+  reb = rebase
+  rebc = rebase --continue
+  reba = rebase --abort
+  s = status -u
+  scrap = checkout -- .
   undo = reset --soft HEAD~
-  lost = reset --hard HEAD~
   tags = tag --sort=taggerdate
   tree = log --pretty=format:'%C(yellow)commit %H%Creset%C(green)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%cr%n%n%b' --graph
   last = log -1
+  size = count-objects -vH
+  where = log --oneline --branches
   refresh = remote update --prune
 [core]
   editor = /usr/bin/vim
