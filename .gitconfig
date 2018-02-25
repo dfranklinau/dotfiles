@@ -11,6 +11,7 @@
   reba = rebase --abort
   s = status -u
   scrap = checkout -- .
+  unstage = reset HEAD .
   undo = reset --soft HEAD~
   tags = tag --sort=taggerdate
   tree = log --pretty=format:'%C(yellow)commit %H%Creset%C(green)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%cr%n%n%b' --graph
