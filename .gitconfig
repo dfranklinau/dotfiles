@@ -9,7 +9,7 @@
   rebc = rebase --continue
   reba = rebase --abort
   s = status -u
-  scrap = checkout -- .
+  scrap = checkout --
   unstage = reset HEAD .
   undo = reset --soft HEAD~
   tags = tag --sort=taggerdate
