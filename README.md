@@ -1,5 +1,4 @@
-dfranklinau dotfiles
-================================================================================
+# dotfiles
 
 This is my collection of files that I use on a day-to-day basis. In this
 repository is:
@@ -21,8 +20,7 @@ repository is:
 
 
 
-Installation
---------------------------------------------------------------------------------
+## Installation
 
 Clone the repository (e.g. to `~/.dotfiles`) and run the installation script:
 
@@ -45,8 +43,7 @@ stuffing up, since I'm too lazy to handle existing folders right now.)
 
 
 
-Requirements and initial configuration
---------------------------------------------------------------------------------
+## Requirements and initial configuration
 
 * macOS
 * [Homebrew](https://brew.sh/)
@@ -100,8 +97,7 @@ brew install pandoc
 
 
 
-`.gitignore`
---------------------------------------------------------------------------------
+## `.gitignore`
 
 I have purposely excluded copying `.gitignore` from the installation script.
 Having a global ignore file is fine for personal projects but in a team
@@ -112,8 +108,7 @@ cater for everyone.
 
 
 
-`.git-completion.bash` and `.git-prompt.sh`
---------------------------------------------------------------------------------
+## `.git-completion.bash` and `.git-prompt.sh`
 
 These **are not** written by me. They have been sourced from the official Git
 repository.
