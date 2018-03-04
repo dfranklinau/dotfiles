@@ -1,6 +1,5 @@
 [alias]
   a = add
-  aa = add .
   ap = add --patch
   b = branch
   c = commit
