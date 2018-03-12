@@ -10,7 +10,7 @@
   reba = rebase --abort
   s = status -u
   scrap = checkout --
-  staged = diff --cached
+  diffc = diff --cached
   unstage = reset HEAD .
   undo = reset --soft HEAD~
   tags = tag --sort=taggerdate
