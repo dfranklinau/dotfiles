@@ -7,7 +7,7 @@
     "at-rule-empty-line-before": ["always", {
       "except": ["first-nested"],
       "ignore": ["after-comment"],
-      "ignoreAtRules": ["if", "include", "function", "mixin"]
+      "ignoreAtRules": ["if", "include", "function", "mixin", "import"]
     }],
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always",
