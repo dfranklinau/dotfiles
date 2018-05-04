@@ -35,6 +35,17 @@ set linebreak
 set hlsearch " [2]
 
 
+" Search settings.
+" [1] - Ignore the case of searches by default.
+" [2] - Combined with the setting of [1], all searches become case-insensitive
+"       by default _unless_ there is an uppercase character.
+" [3] - Turns on incremental search, which moves to the first match while
+"       typing.
+set ignorecase
+set smartcase
+set incsearch
+
+
 " Set the spell check in Vim to English, Australia. Only available in Vim
 " versions 7 or higher. To regenerate the spell file, run:
 "
