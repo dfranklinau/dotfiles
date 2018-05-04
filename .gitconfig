@@ -14,7 +14,7 @@
   unstage = reset HEAD .
   undo = reset --soft HEAD~
   tags = tag --sort=taggerdate
-  tree = log --pretty=format:'%C(yellow)commit %H%Creset%C(green)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%cr%n%n%b' --graph
+  tree = log --pretty=format:'%C(yellow)commit %H%Creset%C(green)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%cr (%cd)%n%n%b' --graph
   minitree = log --oneline --graph
   last = log -1
   size = count-objects -vH
