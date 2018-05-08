@@ -143,8 +143,8 @@ autocmd FileType gitcommit set colorcolumn+=51
 " [C-j] - Go the next ALE error.
 " [Space] - Add a shortcut to remove highlighting by pressing 'Space'.
 vmap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
+nmap <C-k> <Plug>(ale_previous_wrap)
+nmap <C-j> <Plug>(ale_next_wrap)
 nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 
 
