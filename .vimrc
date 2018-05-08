@@ -184,7 +184,7 @@ set noruler
 " [12] - Make the status line slightly personalised with a colour.
 "        Use the following as a colour guide:
 "        http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
-set statusline+=%f\ -\                                     " [1]
+set statusline=%f\ -\                                      " [1]
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}]            " [2]
 set statusline+=%h                                         " [3]
 set statusline+=%m                                         " [4]
