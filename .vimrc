@@ -31,7 +31,7 @@ let g:EditorConfig_core_mode = 'external_command'
 " [1] - Automatically break lines by words, not by character.
 " [2] - Highlight search terms. (see 'Key remapping' for shortcut to toggle
 "       search term highlighting.)
-set linebreak
+set linebreak " [1]
 set hlsearch " [2]
 
 
@@ -41,9 +41,9 @@ set hlsearch " [2]
 "       by default _unless_ there is an uppercase character.
 " [3] - Turns on incremental search, which moves to the first match while
 "       typing.
-set ignorecase
-set smartcase
-set incsearch
+set ignorecase " [1]
+set smartcase " [2]
+set incsearch " [3]
 
 
 " Set the spell check in Vim to English, Australia. Only available in Vim
