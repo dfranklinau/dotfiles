@@ -25,3 +25,6 @@
 [submodule ".vim/pack/dfranklinau/start/vim-unimpaired"]
 	path = .vim/pack/dfranklinau/start/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule ".vim/pack/dfranklinau/start/vim-commentary"]
+	path = .vim/pack/dfranklinau/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary.git
