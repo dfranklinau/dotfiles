@@ -22,3 +22,6 @@
 [submodule ".vim/pack/dfranklinau/start/vim-repeat"]
 	path = .vim/pack/dfranklinau/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule ".vim/pack/dfranklinau/start/vim-unimpaired"]
+	path = .vim/pack/dfranklinau/start/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
