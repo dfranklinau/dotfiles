@@ -19,7 +19,7 @@
   last = log -1
   size = count-objects -vH
   where = log --oneline --branches
-  refresh = remote update --prune
+  update = remote update --prune
 [core]
   editor = /usr/bin/vim
 [branch]
