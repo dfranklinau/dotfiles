@@ -149,6 +149,16 @@ nmap <C-j> <Plug>(ale_next_wrap)
 nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 nmap <silent> _v :vert resize 100<CR>
 
+" The following remappings are based on the `unimpaired.vim` plugin:
+" https://github.com/tpope/vim-unimpaired
+"
+" *[ot - Set the local textwidth to 80.
+" *]ot - Set the local textwidth to 0 (disabling automatic word wrapping)..
+" yot - Toggle the local textwidth between 80 and 0.
+nmap <silent> [ot :setlocal textwidth=80<CR>
+nmap <silent> ]ot :setlocal textwidth=0<CR>
+nmap <silent> yot :setlocal textwidth=<C-R>=&textwidth == "80" ? "0" : "80"<CR><CR>
+
 
 
 
