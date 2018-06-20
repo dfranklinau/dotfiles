@@ -6,6 +6,7 @@
   ca = commit --amend
   ch = checkout
   reb = rebase
+  rebi = rebase -i
   reba = rebase --abort
   rebc = rebase --continue
   rebs = rebase --skip
