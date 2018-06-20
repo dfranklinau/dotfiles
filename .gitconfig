@@ -6,10 +6,11 @@
   ca = commit --amend
   ch = checkout
   reb = rebase
-  rebc = rebase --continue
   reba = rebase --abort
+  rebc = rebase --continue
+  rebs = rebase --skip
   s = status -u
-  scrap = checkout --
+  chk = checkout --
   diffc = diff --cached
   unstage = reset HEAD .
   undo = reset --soft HEAD~
