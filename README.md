@@ -98,6 +98,21 @@ brew install pandoc
 
 
 
+## Extending `.vimrc`
+
+Create a new Vim plugin at the following path:
+
+```
+~/.vim/pack/dfranklinau/start/dfranklinau-extends/plugin/dfranklinau-extends.vim
+```
+
+The `dfranklinau-extends` folder is ignored by Git so any changes to it will not
+create a diff in the repository.
+
+
+
+
+
 ## `.gitignore-template`
 
 I have purposely excluded copying a `.gitignore` from the installation script.
