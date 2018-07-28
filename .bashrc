@@ -23,6 +23,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 . $(brew --prefix)/etc/bash_completion
 fi
 
-# Load nodenv, a Node.js version manager.
+# Load nodenv, a Node.js version manager, if it exists.
 # https://github.com/nodenv/nodenv
-eval "$(nodenv init -)"
+if [ -x "$(command -v nodenv)" ]; then
+  eval "$(nodenv init -)"
+fi
