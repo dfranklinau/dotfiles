@@ -9,7 +9,7 @@ repository is:
 * `.editorconfig` - configuration for [EditorConfig](http://editorconfig.org).
 * `.git-completion.bash` and `.git-prompt.sh` - Git helper scripts.
 * `.gitconfig` - aliases and configuration for Git.
-* `.gitignore` - a boilerplate for commonly ignored files (see **About
+* `.gitignore-template` - a boilerplate for commonly ignored files (see **About
   `.gitignore`**).
 * `.stylelintrc` - configuration for [stylelint](https://stylelint.io).
 * `.vim` - assorted files for Vim, such as plugins and colour schemes.
@@ -97,12 +97,16 @@ brew install pandoc
 
 
 
-## `.gitignore`
+## `.gitignore-template`
 
-I have purposely excluded copying `.gitignore` from the installation script.
+I have purposely excluded copying a `.gitignore` from the installation script.
 Having a global ignore file is fine for personal projects but in a team
 environment it is optimal to include a local `.gitignore` with these rules to
 cater for everyone.
+
+The `.gitignore-template` in this repository provides a set of reasonable
+defaults (not to be confused with `.gitignore`, which has some settings
+specifically for this repository).
 
 
 
