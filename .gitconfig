@@ -5,23 +5,22 @@
   c = commit
   ca = commit --amend
   ch = checkout
+  diffc = diff --cached
+  last = log -1
+  minitree = log --oneline --graph
   reb = rebase
-  rebi = rebase -i
   reba = rebase --abort
   rebc = rebase --continue
+  rebi = rebase -i
   rebs = rebase --skip
   s = status -u
-  chk = checkout --
-  diffc = diff --cached
-  unstage = reset HEAD .
-  undo = reset --soft HEAD~
+  size = count-objects -vH
   tags = tag --sort=taggerdate
   tree = log --pretty=format:'%C(yellow)commit %H%Creset%C(green)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%cr (%cd)%n%n%b' --graph
-  minitree = log --oneline --graph
-  last = log -1
-  size = count-objects -vH
-  where = log --oneline --branches
+  undo = reset --soft HEAD~
+  unstage = reset HEAD .
   update = remote update --prune
+  where = log --oneline --branches
 [core]
   editor = /usr/bin/vim
 [branch]
