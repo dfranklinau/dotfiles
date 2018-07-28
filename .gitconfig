@@ -24,4 +24,7 @@
 [core]
   editor = /usr/bin/vim
 [branch]
+  autosetupmerge = always
   autosetuprebase = always
+[push]
+  default = tracking
