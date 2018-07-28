@@ -11,7 +11,8 @@ repository is:
 * `.gitconfig` - aliases and configuration for Git.
 * `.gitignore-template` - a boilerplate for commonly ignored files (see **About
   `.gitignore`**).
-* `.stylelintrc` - configuration for [stylelint](https://stylelint.io).
+* `.stylelintrc` - configuration for [stylelint](https://stylelint.io) (based on
+  v8.0.0).
 * `.vim` - assorted files for Vim, such as plugins and colour schemes.
 * `.vimrc` - configuration for Vim.
 * `com.googlecode.iterm2.plist` - configuration for iTerm2.
