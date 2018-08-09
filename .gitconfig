@@ -23,6 +23,7 @@
   where = log --oneline --branches
 [core]
   editor = /usr/bin/vim
+  excludesfile = ~/.gitignore
 [branch]
   autosetupmerge = always
   autosetuprebase = always
