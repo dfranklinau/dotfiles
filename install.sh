@@ -14,35 +14,35 @@ src=~/.dotfiles
 backup=~/.dotfiles_backup
 dest=~
 dotfiles=(
-	".ackrc"
-	".bashrc"
-	".bash_profile"
-	".emacs"
-	".gitconfig"
-	".git-completion.bash"
-	".git-prompt.sh"
-	".vimrc"
-	".vim"
-	"com.googlecode.iterm2.plist"
+  ".ackrc"
+  ".bashrc"
+  ".bash_profile"
+  ".emacs"
+  ".gitconfig"
+  ".git-completion.bash"
+  ".git-prompt.sh"
+  ".vimrc"
+  ".vim"
+  "com.googlecode.iterm2.plist"
 )
 
 
 # Warn the user about cleaning the '~/.dotfiles_backup' folder.
 if [ -d $backup ]; then
 
-	read -p "The '~/.dotfiles_backup' folder already exists. For this script to work, the folder will need to be emptied in the event of a file name collision. Are you sure you want to DELETE EVERY FILE from '~./dotfiles_backup'? (y/n) "
-	echo # Add a blank line for breathing space.
+  read -p "The '~/.dotfiles_backup' folder already exists. For this script to work, the folder will need to be emptied in the event of a file name collision. Are you sure you want to DELETE EVERY FILE from '~./dotfiles_backup'? (y/n) "
+  echo # Add a blank line for breathing space.
 
-	if [[ $REPLY =~ ^[Yy]$ ]]; then
-		rm -rf $backup
-		mkdir $backup
-	else
-		exit 0
-	fi
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    rm -rf $backup
+    mkdir $backup
+  else
+    exit 0
+  fi
 
 else
 
-	mkdir $backup
+  mkdir $backup
 
 fi
 
@@ -51,17 +51,17 @@ fi
 # files that may have the same filename in '~./dotfiles_backup'.
 for dotfile in ${dotfiles[@]}; do
 
-	echo "Linking '~/.dotfiles/$dotfile' to '~/$dotfile'..."
+  echo "Linking '~/.dotfiles/$dotfile' to '~/$dotfile'..."
 
-	if [ -f $dest/$dotfile ]; then
-		echo "Oh, '$dotfile' already exists. Moving it to '~./dotfiles_backup/$dotfile'."
-		mv $dest/$dotfile $backup/
-	fi
+  if [ -f $dest/$dotfile ]; then
+    echo "Oh, '$dotfile' already exists. Moving it to '~./dotfiles_backup/$dotfile'."
+    mv $dest/$dotfile $backup/
+  fi
 
-	ln -s $src/$dotfile $dest/$dotfile
+  ln -s $src/$dotfile $dest/$dotfile
 
-	echo "Linked '~/.dotfiles/$dotfile'."
-	echo # Add a blank line for breathing space.
+  echo "Linked '~/.dotfiles/$dotfile'."
+  echo # Add a blank line for breathing space.
 
 done
 
