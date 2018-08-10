@@ -7,6 +7,7 @@ repository is:
 * `.bash_profile` - redirects macOS to use `.bashrc`.
 * `.bashrc` - aliases, Git helpers and CLI customisation.
 * `.editorconfig` - configuration for [EditorConfig](http://editorconfig.org).
+* `.emacs` - configuration for Emacs.
 * `.git-completion.bash` and `.git-prompt.sh` - Git helper scripts.
 * `.gitconfig` - aliases and configuration for Git.
 * `.gitignore-template` - a boilerplate for commonly ignored files (see **About

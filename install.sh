@@ -17,6 +17,7 @@ dotfiles=(
 	".ackrc"
 	".bashrc"
 	".bash_profile"
+	".emacs"
 	".gitconfig"
 	".git-completion.bash"
 	".git-prompt.sh"
