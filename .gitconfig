@@ -25,7 +25,6 @@
   editor = /usr/bin/vim
   excludesfile = ~/.gitignore
 [branch]
-  autosetupmerge = always
   autosetuprebase = always
 [push]
   default = tracking
