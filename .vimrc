@@ -77,10 +77,12 @@ au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=markdo
 " [2] - Allow the 'Backspace' key to function as normal.
 " [3] - Set the minimum number of lines to appear above and below the cursor,
 "       where `so` stands for `scrolloff`.
+" [4] - Allow Vim to access the system clipboard.
 set wildmenu " [1]
 set backspace=indent,eol,start " [2]
 set encoding=utf-8
 set so=7 " [3]
+set clipboard=unnamed " [4]
 
 
 " Filetype settings.
