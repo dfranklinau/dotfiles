@@ -38,7 +38,8 @@ Icon
 
 
 ################################################################################
-# Project files
+# Vim extends
+# Ignore a specific directory that I use to install machine-specific plugins.
 ################################################################################
 
-.vim/pack/dfranklinau/start/dfranklinau-extends/
+.vim/pack/dfranklinau-extends/

@@ -104,11 +104,14 @@ brew install pandoc
 Create a new Vim plugin at the following path:
 
 ```
-~/.vim/pack/dfranklinau/start/dfranklinau-extends/plugin/dfranklinau-extends.vim
+~/.vim/pack/dfranklinau-extends/start/dfranklinau/plugin/dfranklinau.vim
 ```
 
 The `dfranklinau-extends` folder is ignored by Git so any changes to it will not
 create a diff in the repository.
+
+Machine-specific plugins can also be cloned into this repository and manually
+managed, i.e. added via `git clone` instead of `git submodule add`.
 
 
 
