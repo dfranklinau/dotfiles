@@ -20,7 +20,7 @@
   undo = reset --soft HEAD~
   unstage = reset HEAD .
   update = remote update --prune
-  where = log -w --pretty=format:'%C(magenta)%cr%Creset %C(yellow)%h%Creset%C(auto)%d%Creset%n%s%n' --branches --graph
+  where = log --pretty=format:'%C(magenta)%cr%Creset %C(yellow)%h%Creset%C(auto)%d%Creset%n%s%n' --follow
 [core]
   editor = /usr/bin/vim
   excludesfile = ~/.gitignore
