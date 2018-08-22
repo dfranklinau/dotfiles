@@ -1,9 +1,3 @@
-# List of commands for use with `git log` and the `--pretty` flag:
-# https://www.git-scm.com/docs/git-log#_pretty_formats
-
-# List of colours for use with `git log` formatting:
-# https://www.git-scm.com/docs/git-config#git-config-color
-
 [alias]
   a = add
   ap = add --patch
@@ -22,11 +16,11 @@
   s = status -u
   size = count-objects -vH
   tags = tag --sort=taggerdate
-  tree = log --pretty=format:'%C(yellow)commit %H%Creset%C(green)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%C(magenta)%cr (%cD)%Creset%n%n%b' --graph
+  tree = log --pretty=format:'%C(yellow)commit %H%Creset%C(auto)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%C(magenta)%cr (%cD)%Creset%n%n%b' --graph
   undo = reset --soft HEAD~
   unstage = reset HEAD .
   update = remote update --prune
-  where = log -w --pretty=format:'%C(magenta)%cr%Creset %C(yellow)%h%Creset%C(green)%d%Creset%n%s%n' --branches --graph
+  where = log -w --pretty=format:'%C(magenta)%cr%Creset %C(yellow)%h%Creset%C(auto)%d%Creset%n%s%n' --branches --graph
 [core]
   editor = /usr/bin/vim
   excludesfile = ~/.gitignore
