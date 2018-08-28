@@ -15,12 +15,13 @@
   rebs = rebase --skip
   s = status -u
   size = count-objects -vH
+  sleuth = log --pretty=format:'%C(magenta)%cr%Creset %C(yellow)%h%Creset%C(auto)%d%Creset%n%s%n' --all --full-history --follow
   tags = tag --sort=taggerdate
   tree = log --pretty=format:'%C(yellow)commit %H%Creset%C(auto)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%C(magenta)%cr (%cD)%Creset%n%n%b' --graph
   undo = reset --soft HEAD~
   unstage = reset HEAD .
   update = remote update --prune
-  where = log --pretty=format:'%C(magenta)%cr%Creset %C(yellow)%h%Creset%C(auto)%d%Creset%n%s%n' --all --full-history --follow
+  where = log --pretty=format:'%C(magenta)%cr%Creset %C(yellow)%h%Creset%C(auto)%d%Creset%n%s%n' --branches --follow
 [core]
   editor = /usr/bin/vim
   excludesfile = ~/.gitignore
