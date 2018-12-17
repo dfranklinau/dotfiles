@@ -9,6 +9,7 @@
     * [Text editors](#text-editors)
     * [Homebrew packages](#homebrew-packages)
     * [Extending `.vimrc`](#extending-vimrc)
+    * [Vim plugins](#vim-plugins)
     * [`.gitignore-template`](#gitignore-template)
     * [`.git-completion.bash` and `.git-prompt.sh`](#git-completionbash-and-git-promptsh)
 
@@ -131,6 +132,30 @@ create a diff in the repository.
 
 Machine-specific plugins can also be cloned into this repository and manually
 managed, i.e. added via `git clone` instead of `git submodule add`.
+
+
+### Vim plugins
+
+I use the following Vim plugins:
+
+* [ale](https://github.com/w0rp/ale) - linting and fixing.
+* [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) -
+  EditorConfig support.
+* [emmet-vim](https://github.com/mattn/emmet-vim) - HTML and CSS Emmet syntax
+  support.
+* [html5.vim](https://github.com/othree/html5.vim) - HTML5 syntax.
+* [vim-commentary](https://github.com/tpope/vim-commentary) - commenting
+  shortcuts.
+* [vim-gitgutter](https://github.com/airblade/vim-gitgutter) - inline Git diff
+  tool.
+* [vim-javascript](https://github.com/pangloss/vim-javascript) - JavaScript
+  syntax.
+* [vim-repeat](https://github.com/tpope/vim-repeat) - enables the `.` repeat
+  command with supported plugins.
+* [vim-surround](https://github.com/tpope/vim-surround) - quoting and
+  parenthesising shortcuts.
+* [vim-unimpaired](https://github.com/tpope/vim-unimpaired) - all purpose
+  shortcuts.
 
 
 ### `.gitignore-template`
