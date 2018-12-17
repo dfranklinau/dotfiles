@@ -1,7 +1,25 @@
 # dotfiles
 
-This is my collection of files that I use on a day-to-day basis. In this
-repository is:
+## Table of contents
+
+* [Introduction](#introduction)
+* [Requirements](#requirements)
+* [Installation](#installation)
+* [Miscellaneous](#miscellaneous)
+    * [Text editors](#text-editors)
+    * [Homebrew packages](#homebrew-packages)
+    * [Extending `.vimrc`](#extending-vimrc)
+    * [`.gitignore-template`](#gitignore-template)
+    * [`.git-completion.bash` and `.git-prompt.sh`](#git-completionbash-and-git-promptsh)
+
+
+
+
+
+## Introduction
+
+This is a collection of files and configurations that I use on a day-to-day
+basis. It contains:
 
 * `.ackrc` - configuration for [ack](https://beyondgrep.com).
 * `.bash_profile` - redirects macOS to use `.bashrc`.
@@ -22,9 +40,19 @@ repository is:
 
 
 
+## Requirements
+
+* macOS
+* [Homebrew](https://brew.sh/)
+* Vim 8 (for native Vim plugin management)
+
+
+
+
+
 ## Installation
 
-Clone the repository (e.g. to `~/.dotfiles`) and run the installation script:
+Clone the repository `~/.dotfiles` and run the installation script:
 
 ```
 git clone git@github.com:dfranklinau/dotfiles.git ~/.dotfiles
@@ -38,23 +66,16 @@ Git submodules are used for managing Vim plugins.
 
 The installation script creates symbolic links for a list of files and folders
 within `~/.dotfiles`. It is recommended that the `.vim` folder is manually
-backed up and removed before installation. (This is purely to prevent anything
-stuffing up, since I'm too lazy to handle existing folders right now.)
+backed up and removed before installation. (This is to prevent things from
+stuffing up since I'm too lazy to handle existing folders.)
 
 
 
 
 
-## Requirements and initial configuration
+## Miscellaneous
 
-* macOS
-* [Homebrew](https://brew.sh/)
-* Vim version 8 or higher to use native Vim plugin management
-
-
-### Useful Homebrew packages
-
-#### Text editors
+### Text editors
 
 Since macOS ships with slightly old instances of Emacs and Vim the latest
 versions can be installed via Homebrew.
@@ -71,9 +92,10 @@ for Homebrew versions to be loaded instead of the defaults when executed from
 the command line.
 
 
+### Homebrew packages
 
-
-#### Utilities
+While not required per se, I find the following packages useful enough to
+warrant their own section.
 
 ```
 brew install ack
@@ -84,22 +106,19 @@ brew install tidy-html5
 brew install pandoc
 ```
 
-- [ack](https://beyondgrep.com) is used for searching through files.
-- [`bash-completion`](https://github.com/scop/bash-completion) is used for
+* [ack](https://beyondgrep.com) is used for searching through files.
+* [`bash-completion`](https://github.com/scop/bash-completion) is used for
   adding auto completion support for various command line tools (e.g. Docker).
-- [editorconfig](https://github.com/editorconfig/editorconfig-core-c/) is used
+* [editorconfig](https://github.com/editorconfig/editorconfig-core-c/) is used
   to enable EditorConfig in Vim.
-- [nodenv](https://github.com/nodenv/nodenv/) is used for managing multiple
+* [nodenv](https://github.com/nodenv/nodenv/) is used for managing multiple
   versions of Node.js.
-- [`tidy-html5`](http://www.html-tidy.org) is for use with
+* [`tidy-html5`](http://www.html-tidy.org) is for use with
   [Ale](https://github.com/w0rp/ale/) in Vim.
-- [`pandoc`](http://pandoc.org) is a neat document conversion tool.
+* [`pandoc`](http://pandoc.org) is a neat document conversion tool.
 
 
-
-
-
-## Extending `.vimrc`
+### Extending `.vimrc`
 
 Create a new Vim plugin at the following path:
 
@@ -114,10 +133,7 @@ Machine-specific plugins can also be cloned into this repository and manually
 managed, i.e. added via `git clone` instead of `git submodule add`.
 
 
-
-
-
-## `.gitignore-template`
+### `.gitignore-template`
 
 I have purposely excluded copying a `.gitignore` from the installation script.
 Having a global ignore file is fine for personal projects but in a team
@@ -129,10 +145,7 @@ defaults (not to be confused with `.gitignore`, which has some settings
 specifically for this repository).
 
 
-
-
-
-## `.git-completion.bash` and `.git-prompt.sh`
+### `.git-completion.bash` and `.git-prompt.sh`
 
 These **are not** written by me. They have been sourced from the official Git
 repository.
