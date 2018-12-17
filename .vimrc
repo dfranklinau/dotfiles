@@ -201,8 +201,8 @@ set noruler
 " [5]  - Add a flag if the file is read only.
 " [6]  - Shift remaining `statusline` edits to the right of the window.
 " [7]  - Display the filetype.
-" [8] - Show the current soft and hard cursor column.
-" [9] - Show the current cursor line and total lines.
+" [8]  - Show the current soft and hard cursor column.
+" [9]  - Show the current cursor line and total lines.
 " [10] - Show the percentage scrolled.
 " [11] - Mark the column value of one tab.
 " [12] - Make the status line slightly personalised with a colour.
