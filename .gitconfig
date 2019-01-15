@@ -4,6 +4,7 @@
   b = branch
   c = commit
   ca = commit --amend
+  can = commit --amend --no-edit
   ch = checkout
   diffc = diff --cached
   last = log -1
