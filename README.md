@@ -5,6 +5,8 @@
 * [Introduction](#introduction)
 * [Requirements](#requirements)
 * [Installation](#installation)
+  * [macOS](#installation-macos)
+  * [Linux](#installation-linux)
 * [Miscellaneous](#miscellaneous)
     * [Text editors](#text-editors)
     * [Homebrew packages](#homebrew-packages)
@@ -43,9 +45,9 @@ basis. It contains:
 
 ## Requirements
 
-* macOS
-* [Homebrew](https://brew.sh/)
 * Vim 8 (for native Vim plugin management)
+* EditorConfig
+* [Homebrew](https://brew.sh/) (macOS only)
 
 
 
@@ -71,6 +73,25 @@ backed up and removed before installation. (This is to prevent things from
 stuffing up since I'm too lazy to handle existing folders.)
 
 
+### macOS
+
+For EditorConfig to work, it must be installed via Homebrew:
+
+```
+brew install editorconfig
+```
+
+
+### Linux
+
+For EditorConfig to work, it must be installed using the appropriate package
+manager, e.g.:
+
+```
+apt-get install editorconfig
+```
+
+
 
 
 
@@ -93,19 +114,10 @@ for Homebrew versions to be loaded instead of the defaults when executed from
 the command line.
 
 
-### Homebrew packages
+### Additional packages
 
 While not required per se, I find the following packages useful enough to
 warrant their own section.
-
-```
-brew install ack
-brew install bash-completion
-brew install editorconfig
-brew install nodenv
-brew install tidy-html5
-brew install pandoc
-```
 
 * [ack](https://beyondgrep.com) is used for searching through files.
 * [`bash-completion`](https://github.com/scop/bash-completion) is used for
