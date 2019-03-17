@@ -178,9 +178,13 @@ nmap <silent> yot :setlocal textwidth=<C-R>=&textwidth == "80" ? "0" : "80"<CR><
 " Commands
 " =============================================================================
 
-" Wq - stops the classic typo from throwing an error by remapping it to the
-"      intended `wq` command.
+" Wa  - stops the classic typo from throwing an error by remapping it to the
+"       intended `wa` command.
+" Wq  - the same as above.
+" Wqa - the same as above... again.
+command! Wa wa
 command! Wq wq
+command! Wqa wqa
 
 
 
