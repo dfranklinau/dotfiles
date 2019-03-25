@@ -147,19 +147,23 @@ autocmd FileType gitcommit set colorcolumn+=51
 " Key remapping
 " =============================================================================
 
-" nmap - Remappings for Vim's normal mode.
-" vnmap - Remappings for Vim's visual mode.
+" nmap  - Remappings for Normal mode.
+" vnmap - Remappings for Visual mode.
+" cmap  - Remappings for Command-line mode.
 
-" <C-r> - Search and replace shortcut for selected text
-" <C-k> - Go the previous ALE error.
-" <C-j> - Go the next ALE error.
+" <C-r>   - Search and replace shortcut for selected text
+" <C-k>   - Go the previous ALE error.
+" <C-j>   - Go the next ALE error.
 " <Space> - Add a shortcut to remove highlighting by pressing 'Space'.
-" _v - Vertically resize the window to 100.
+" _v      - Vertically resize the window to 100.
+" :w!!    - Writes a file opened without `sudo` via a hack so that Vim does not
+"           have to be started with `sudo` permissions.
 vmap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 nmap <C-k> <Plug>(ale_previous_wrap)
 nmap <C-j> <Plug>(ale_next_wrap)
 nmap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 nmap <silent> _v :vert resize 100<CR>
+cmap w!! w !sudo tee > /dev/null %
 
 " The following remappings are based on the `unimpaired.vim` plugin:
 " https://github.com/tpope/vim-unimpaired
