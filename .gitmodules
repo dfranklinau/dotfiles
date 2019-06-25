@@ -28,3 +28,6 @@
 [submodule ".vim/pack/dfranklinau/start/vim-commentary"]
 	path = .vim/pack/dfranklinau/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule ".vim/pack/dfranklinau/start/vim-matchit"]
+	path = .vim/pack/dfranklinau/start/vim-matchit
+	url = https://github.com/adelarsq/vim-matchit.git
