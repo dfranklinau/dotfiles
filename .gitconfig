@@ -2,6 +2,7 @@
   a = add
   ap = add --patch
   b = branch
+  bigtree = log --pretty=format:'%C(yellow)commit %H%Creset%C(auto)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%C(magenta)%cr (%cD)%Creset%n%n%b' --name-status --graph
   c = commit
   ca = commit --amend
   can = commit --amend --no-edit
