@@ -17,6 +17,7 @@ fi
 
 # Load nodenv, a Node.js version manager, if it exists.
 # https://github.com/nodenv/nodenv
+export PATH="$HOME/.nodenv/bin:$PATH"
 if [ -x "$(command -v nodenv)" ]; then
   eval "$(nodenv init -)"
 fi
