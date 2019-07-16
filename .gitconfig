@@ -1,3 +1,45 @@
+# Alias explanations:
+#
+# `bigtree`
+# See `tree`. Functions similarly, but also displays a list of the files changed
+# in each commit.
+#
+# `diffc`
+# Displays the diff of files that are staged for commit.
+#
+# `last`
+# Displays the commit title, body and files changed for the most recent commit.
+#
+# `minitree`
+# See `tree`. Functions similarly, but only displays the title of each commit.
+#
+# `size`
+# Displays file size information for the repository.
+#
+# `tree`
+# Displays a log of commits, showing the title and body of all commits
+# (displayed in a branch structure).
+#
+# `sleuth`
+# See `where`. Performs an even deeper dive on a file in the repository across
+# all branches and all history, including deleted files.
+#
+# `tags`
+# Lists all Git tags by creation date.
+#
+# `tree`
+# Displays the history of the current branch in Git, including the title and
+# body of each commit.
+#
+# `undo`
+# Undo the last commit on the current branch, keeping all files intact.
+#
+# `update`
+# Fetch all branch updates from the remote repository.
+#
+# `where`
+# Performs a deep dive on a file in the repository across all branches.
+
 [alias]
   a = add
   ap = add --patch
@@ -22,7 +64,6 @@
   tags = tag --sort=taggerdate
   tree = log --pretty=format:'%C(yellow)commit %H%Creset%C(auto)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%C(magenta)%cr (%cD)%Creset%n%n%b' --graph
   undo = reset --soft HEAD~
-  unstage = reset HEAD .
   update = remote update --prune
   where = log --pretty=format:'%C(magenta)%cr%Creset %C(yellow)%h%Creset%C(auto)%d%Creset%n%s%n' --branches --follow
 [core]
