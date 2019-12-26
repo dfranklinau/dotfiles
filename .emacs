@@ -27,7 +27,6 @@
 (package-initialize)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/")) ;; [1]
 (add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t) ;; [2]
-(setq inferior-lisp-program (executable-find "sbcl"))
 
 
 
@@ -52,6 +51,15 @@
 
 (show-paren-mode t)
 
+
+
+
+
+;; Lisp
+;; ============================================================================
+
+;; Tell Emacs which Lisp compiler to use; in this case, SBCL.
+(setq inferior-lisp-program (executable-find "sbcl"))
 
 
 
