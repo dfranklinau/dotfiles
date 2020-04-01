@@ -39,6 +39,7 @@
 # Fetch all branch updates from the remote repository.
 #
 # `where`
+# E.g.: `git where -- <file>`
 # Performs a deep dive on a file in the repository across all branches.
 
 [alias]
