@@ -150,23 +150,25 @@ managed, i.e. added via `git clone` instead of `git submodule add`.
 
 I use the following Vim plugins:
 
-* [ale](https://github.com/w0rp/ale) - linting and fixing.
-* [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) -
+* [ale](https://github.com/w0rp/ale) 2.6.0 - linting and fixing.
+* [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) 0.3.3 -
   EditorConfig support.
-* [emmet-vim](https://github.com/mattn/emmet-vim) - HTML and CSS Emmet syntax
-  support.
-* [html5.vim](https://github.com/othree/html5.vim) - HTML5 syntax.
-* [vim-commentary](https://github.com/tpope/vim-commentary) - commenting
+* [emmet-vim](https://github.com/mattn/emmet-vim) master - HTML and CSS Emmet
+  syntax support.
+* [html5.vim](https://github.com/othree/html5.vim) master - HTML5 syntax.
+* [vim-commentary](https://github.com/tpope/vim-commentary) 1.3 - commenting
   shortcuts.
-* [vim-gitgutter](https://github.com/airblade/vim-gitgutter) - inline Git diff
-  tool.
-* [vim-javascript](https://github.com/pangloss/vim-javascript) - JavaScript
-  syntax.
-* [vim-repeat](https://github.com/tpope/vim-repeat) - enables the `.` repeat
+* [vim-gitgutter](https://github.com/airblade/vim-gitgutter) master - inline Git
+  diff tool.
+* [vim-matchit](https://github.com/adelarsq/vim-matchit) master - provides
+  extended matching for the `%` operator.
+* [vim-javascript](https://github.com/pangloss/vim-javascript) 1.2.5 -
+  JavaScript syntax.
+* [vim-repeat](https://github.com/tpope/vim-repeat) 1.2 - enables the `.` repeat
   command with supported plugins.
-* [vim-surround](https://github.com/tpope/vim-surround) - quoting and
+* [vim-surround](https://github.com/tpope/vim-surround) 2.1 - quoting and
   parenthesising shortcuts.
-* [vim-unimpaired](https://github.com/tpope/vim-unimpaired) - all purpose
+* [vim-unimpaired](https://github.com/tpope/vim-unimpaired) 2.0 - all purpose
   shortcuts.
 
 
