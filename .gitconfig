@@ -21,10 +21,11 @@
 # (displayed in a branch structure).
 #
 # `sleuth`
+# E.g.: `git sleuth -- <file>`
 # See `where`. Performs an even deeper dive on a file in the repository across
 # all branches and all history, including deleted files.
 #
-# `tags`
+# `tagsort`
 # Lists all Git tags by creation date.
 #
 # `tree`
@@ -61,7 +62,7 @@
   size = count-objects -vH
   sleuth = log --pretty=format:'%C(magenta)%cr%Creset %C(yellow)%h%Creset%C(auto)%d%Creset%n%s%n' --all --full-history --follow
   su = status -u
-  tags = tag --sort=taggerdate
+  tagsort = tag --sort=taggerdate
   tree = log --pretty=format:'%C(yellow)commit %H%Creset%C(auto)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%C(magenta)%cr (%cD)%Creset%n%n%b' --graph
   undo = reset --soft HEAD~
   update = remote update --prune
