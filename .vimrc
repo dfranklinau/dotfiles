@@ -67,6 +67,13 @@ syntax on
 au BufNewFile,BufRead *.markdown,*.mdown,*.mkd,*.mkdn,*.mdwn,*.md  set ft=markdown " [1]
 
 
+" Fold settings.
+" [1] - Use syntax highlighting to determine folds.
+" [2] - Display fold information in a column.
+set foldmethod=syntax " [1]
+set foldcolumn=2 " [2]
+
+
 
 
 
