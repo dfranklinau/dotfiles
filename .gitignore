@@ -42,7 +42,7 @@ Icon[]
 # Ignore a specific directory that I use to install machine-specific plugins.
 ################################################################################
 
-.vim/pack/dfranklinau-extends/
+.vim/pack/local/
 
 
 ################################################################################
