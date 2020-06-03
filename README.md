@@ -152,7 +152,7 @@ I use the following Vim plugins:
 
 * [ale](https://github.com/w0rp/ale) 2.6.0 - linting and fixing.
 * [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) 1.80 - fuzzy file finding.
-* [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) 0.3.3 -
+* [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) 1.1.1 -
   EditorConfig support.
 * [emmet-vim](https://github.com/mattn/emmet-vim) master - HTML and CSS Emmet
   syntax support.
