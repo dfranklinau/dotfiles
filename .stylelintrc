@@ -3,11 +3,10 @@
     "stylelint-order"
   ],
   "rules": {
-
     "at-rule-empty-line-before": ["always", {
       "except": ["first-nested"],
       "ignore": ["after-comment"],
-      "ignoreAtRules": ["if", "include", "function", "mixin", "import"]
+      "ignoreAtRules": ["if", "include", "function", "mixin"]
     }],
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always",
@@ -27,7 +26,10 @@
     "color-named": "never",
     "color-no-invalid-hex": true,
 
-    "comment-empty-line-before": "always",
+    "comment-empty-line-before": ["always", {
+      "except": ["first-nested"]
+    }],
+
     "comment-no-empty": true,
 
     "custom-property-empty-line-before": ["always", {
@@ -256,7 +258,9 @@
         {
           "order": "strict",
           "properties": [
-            "overflow"
+            "overflow",
+            "overflow-x"
+            "overflow-y"
           ]
         },
         {
@@ -295,6 +299,7 @@
           "order": "strict",
           "properties": [
             "font",
+            "font-display",
             "font-family",
             "font-size",
             "font-weight"
@@ -363,9 +368,9 @@
     "unit-no-unknown": true,
 
     "value-keyword-case": "lower",
-    "value-list-comma-newline-after": "never-multi-line",
+    "value-list-comma-newline-after": "always-multi-line",
     "value-list-comma-newline-before": "never-multi-line",
-    "value-list-comma-space-after": "always",
+    "value-list-comma-space-after": "always-single-line",
     "value-list-comma-space-before": "never",
     "value-list-max-empty-lines": 0,
     "value-no-vendor-prefix": true
