@@ -17,9 +17,6 @@ let g:netrw_dirhistmax = 0
 " Plugins
 " =============================================================================
 
-" Enable EditorConfig.
-let g:EditorConfig_core_mode = 'external_command'
-
 " Let ctrlp.vim search all files and define sensible ignores.
 let g:ctrlp_max_files = 0
 let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git\|coverage\|static\|*.tgz\|dist\|public\|lib\'
