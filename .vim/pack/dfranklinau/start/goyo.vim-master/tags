@@ -1,0 +1,17 @@
+:Goyo	doc/goyo.txt	/*:Goyo*
+:PlugInstall	doc/goyo.txt	/*:PlugInstall*
+g:goyo_height	doc/goyo.txt	/*g:goyo_height*
+g:goyo_linenr	doc/goyo.txt	/*g:goyo_linenr*
+g:goyo_width	doc/goyo.txt	/*g:goyo_width*
+goyo	doc/goyo.txt	/*goyo*
+goyo-callbacks	doc/goyo.txt	/*goyo-callbacks*
+goyo-configuration	doc/goyo.txt	/*goyo-configuration*
+goyo-dimension-expression	doc/goyo.txt	/*goyo-dimension-expression*
+goyo-inspiration	doc/goyo.txt	/*goyo-inspiration*
+goyo-installation	doc/goyo.txt	/*goyo-installation*
+goyo-license	doc/goyo.txt	/*goyo-license*
+goyo-pros	doc/goyo.txt	/*goyo-pros*
+goyo-toc	doc/goyo.txt	/*goyo-toc*
+goyo-usage	doc/goyo.txt	/*goyo-usage*
+goyo-vim	doc/goyo.txt	/*goyo-vim*
+goyo.txt	doc/goyo.txt	/*goyo.txt*
