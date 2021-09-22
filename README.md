@@ -31,13 +31,12 @@ basis. It contains:
 * `.emacs` - configuration for Emacs.
 * `.git-completion.bash` and `.git-prompt.sh` - Git helper scripts.
 * `.gitconfig` - aliases and configuration for Git.
-* `.gitignore-template` - a boilerplate for commonly ignored files (see **About
-  `.gitignore`**).
+* `.gitignore-template` - a boilerplate for commonly ignored files (see
+  **`.gitignore-template`**).
 * `.stylelintrc` - configuration for [stylelint](https://stylelint.io) (based on
   v8.0.0).
 * `.vim` - assorted files for Vim, such as plugins and colour schemes.
 * `.vimrc` - configuration for Vim.
-* `com.googlecode.iterm2.plist` - configuration for iTerm2.
 
 
 
@@ -47,7 +46,9 @@ basis. It contains:
 
 * Vim 8 (for native Vim plugin management)
 * EditorConfig
-* [Homebrew](https://brew.sh/) (macOS only)
+
+[Homebrew](https://brew.sh/) can be useful for updating the default
+installations of Emacs and Vim that are shipped on macOS.
 
 
 
@@ -65,31 +66,12 @@ git submodule update
 bash install.sh
 ```
 
-Git submodules are used for managing Vim plugins.
-
 The installation script creates symbolic links for a list of files and folders
-within `~/.dotfiles`. It is recommended that the `.vim` folder is manually
-backed up and removed before installation. (This is to prevent things from
-stuffing up since I'm too lazy to handle existing folders.)
+within `~/.dotfiles`.
 
-
-### macOS
-
-For EditorConfig to work, it must be installed via Homebrew:
-
-```
-brew install editorconfig
-```
-
-
-### Linux
-
-For EditorConfig to work, it must be installed using the appropriate package
-manager, e.g.:
-
-```
-apt-get install editorconfig
-```
+As with all good things, there is a chance the install could stuff up so it is
+recommended to create a back up of any existing dotfiles that are important to
+you, e.g. the `.vim` folder.
 
 
 
@@ -113,7 +95,6 @@ brew install vim
 for Homebrew versions to be loaded instead of the defaults when executed from
 the command line.
 
-
 ### Additional packages
 
 While not required per se, I find the following packages useful enough to
@@ -130,7 +111,6 @@ warrant their own section.
   [Ale](https://github.com/w0rp/ale/) in Vim.
 * [`pandoc`](http://pandoc.org) is a neat document conversion tool.
 
-
 ### Extending `.vimrc`
 
 Create a new Vim plugin at the following path:
@@ -144,7 +124,6 @@ create a diff in the repository.
 
 Machine-specific plugins can also be cloned into this repository and manually
 managed, i.e. added via `git clone` instead of `git submodule add`.
-
 
 ### Vim plugins
 
@@ -173,7 +152,6 @@ I use the following Vim plugins:
 * [vim-unimpaired](https://github.com/tpope/vim-unimpaired) 2.0 - all purpose
   shortcuts.
 
-
 ### `.gitignore-template`
 
 I have purposely excluded copying a `.gitignore` from the installation script.
@@ -184,7 +162,6 @@ cater for everyone.
 The `.gitignore-template` in this repository provides a set of reasonable
 defaults (not to be confused with `.gitignore`, which has some settings
 specifically for this repository).
-
 
 ### `.git-completion.bash` and `.git-prompt.sh`
 
