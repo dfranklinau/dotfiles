@@ -36,4 +36,8 @@ if [[ "$(uname -s)" == 'Darwin' ]]; then
 fi
 
 # Include any local bashrc commands.
-source ~/.bashrc-extends
+BASHRCEXTENDS="$HOME/.bashrc-extends"
+
+if [ -f "$BASHRCEXTENDS" ]; then
+  source ~/.bashrc-extends
+fi
