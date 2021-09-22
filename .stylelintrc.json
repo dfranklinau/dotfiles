@@ -3,6 +3,7 @@
     "stylelint-order"
   ],
   "rules": {
+
     "at-rule-empty-line-before": ["always", {
       "except": ["first-nested"],
       "ignore": ["after-comment"],
@@ -112,18 +113,18 @@
     "order/order": [
       [
         {
-          type: "at-rule",
-          name: "include"
+          "type": "at-rule",
+          "name": "include"
         },
         "declarations",
         {
-          type: "at-rule",
-          name: "media"
+          "type": "at-rule",
+          "name": "media"
         },
         "rules"
       ],
       {
-        unspecified: "ignore"
+        "unspecified": "ignore"
       }
     ],
     "order/properties-order": [
@@ -259,7 +260,7 @@
           "order": "strict",
           "properties": [
             "overflow",
-            "overflow-x"
+            "overflow-x",
             "overflow-y"
           ]
         },
@@ -374,6 +375,5 @@
     "value-list-comma-space-before": "never",
     "value-list-max-empty-lines": 0,
     "value-no-vendor-prefix": true
-
   }
 }

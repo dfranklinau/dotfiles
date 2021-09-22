@@ -33,8 +33,7 @@ basis. It contains:
 * `.gitconfig` - aliases and configuration for Git.
 * `.gitignore-template` - a boilerplate for commonly ignored files (see
   **`.gitignore-template`**).
-* `.stylelintrc` - configuration for [stylelint](https://stylelint.io) (based on
-  v8.0.0).
+* `.stylelintrc` - configuration for [stylelint](https://stylelint.io) v13.13.1 and the `stylelint-order` v4.1.0 plugin.
 * `.vim` - assorted files for Vim, such as plugins and colour schemes.
 * `.vimrc` - configuration for Vim.
 
