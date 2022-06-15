@@ -14,7 +14,6 @@ src=~/.dotfiles
 backup=~/.dotfiles_backup
 dest=~
 dotfiles=(
-  ".ackrc"
   ".bashrc"
   ".bash_profile"
   ".emacs"
@@ -23,7 +22,6 @@ dotfiles=(
   ".git-prompt.sh"
   ".vimrc"
   ".vim"
-  "com.googlecode.iterm2.plist"
 )
 
 
