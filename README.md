@@ -3,17 +3,14 @@
 ## Table of contents
 
 * [Introduction](#introduction)
-* [Requirements](#requirements)
 * [Installation](#installation)
-  * [macOS](#installation-macos)
-  * [Linux](#installation-linux)
-* [Miscellaneous](#miscellaneous)
-    * [Text editors](#text-editors)
-    * [Homebrew packages](#homebrew-packages)
-    * [Extending `.vimrc`](#extending-vimrc)
-    * [Vim plugins](#vim-plugins)
-    * [`.gitignore-template`](#gitignore-template)
-    * [`.git-completion.bash` and `.git-prompt.sh`](#git-completionbash-and-git-promptsh)
+* [Usage](#usage)
+  * [Extending `.bashrc`](#extending-bashrc)
+  * [Extending `.vimrc`](#extending-vimrc)
+  * [`.git-completion.bash` and `.git-prompt.sh`](#git-completionbash-and-git-promptsh)
+* [Appendix](#appendix)
+  * [Vim plugins](#vim-plugins)
+  * [Recommended utilities](#recommended-utilities)
 
 
 
@@ -22,32 +19,24 @@
 ## Introduction
 
 This is a collection of files and configurations that I use on a day-to-day
-basis. It contains:
+basis:
 
-* `.ackrc` - configuration for [ack](https://beyondgrep.com).
 * `.bash_profile` - redirects macOS to use `.bashrc`.
-* `.bashrc` - aliases, Git helpers and CLI customisation.
-* `.editorconfig` - configuration for [EditorConfig](http://editorconfig.org).
-* `.emacs` - configuration for Emacs.
+* `.bashrc` - Bash configuration.
+* `.emacs` - Emacs configuration.
 * `.git-completion.bash` and `.git-prompt.sh` - Git helper scripts.
-* `.gitconfig` - aliases and configuration for Git.
-* `.gitignore-template` - a boilerplate for commonly ignored files (see
-  **`.gitignore-template`**).
-* `.stylelintrc` - configuration for [stylelint](https://stylelint.io) v13.13.1 and the `stylelint-order` v4.1.0 plugin.
-* `.vim` - assorted files for Vim, such as plugins and colour schemes.
-* `.vimrc` - configuration for Vim.
+* `.gitconfig` - Git aliases and configuration.
+* `.vim` - Vim plugins, syntax files and colour schemes.
+* `.vimrc` - Vim configuration.
 
+Template files are also included. These are intended to be copied across to new
+projects where needed and serve as a reference:
 
-
-
-
-## Requirements
-
-* Vim 8 (for native Vim plugin management)
-* EditorConfig
-
-[Homebrew](https://brew.sh/) can be useful for updating the default
-installations of Emacs and Vim that are shipped on macOS.
+* `.editorconfig.template` - [EditorConfig](http://editorconfig.org)
+  configuration template.
+* `.gitignore.template` - gitignore template for commonly ignored files.
+* `.stylelintrc.json.template` - [stylelint](https://stylelint.io) v13.13.1
+  configuration template, which uses the `stylelint-order` v4.1.0 plugin.
 
 
 
@@ -55,78 +44,65 @@ installations of Emacs and Vim that are shipped on macOS.
 
 ## Installation
 
-Clone the repository `~/.dotfiles` and run the installation script:
+Clone the repository to `~/.dotfiles` and run the installation script:
 
 ```
-git clone git@github.com:dfranklinau/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-git submodule init
-git submodule update
+cd ~
+git clone git@github.com:dfranklinau/dotfiles.git .dotfiles
+cd .dotfiles
 bash install.sh
 ```
 
 The installation script creates symbolic links for a list of files and folders
 within `~/.dotfiles`.
 
-As with all good things, there is a chance the install could stuff up so it is
-recommended to create a back up of any existing dotfiles that are important to
-you, e.g. the `.vim` folder.
+It is recommended to create a back up of any existing dotfiles that are
+important prior to running, in the off-chance something goes awry.
 
 
 
 
 
-## Miscellaneous
+## Usage
 
-### Text editors
+### Extending `.bashrc`
 
-Since macOS ships with slightly old instances of Emacs and Vim the latest
-versions can be installed via Homebrew.
+Create a new file:
 
 ```
-brew install emacs --with-cocoa
-brew install vim
+~/.bashrc-local
 ```
 
-…where the `--with-cocoa` flag installs the GNU version of Emacs.
+This file is ignored by Git so any changes will not be tracked.
 
-`/usr/local/bin` needs to be defined before `/usr/bin` in the `$PATH` variable
-for Homebrew versions to be loaded instead of the defaults when executed from
-the command line.
-
-### Additional packages
-
-While not required per se, I find the following packages useful enough to
-warrant their own section.
-
-* [ack](https://beyondgrep.com) is used for searching through files.
-* [`bash-completion`](https://github.com/scop/bash-completion) is used for
-  adding auto completion support for various command line tools (e.g. Docker).
-* [editorconfig](https://github.com/editorconfig/editorconfig-core-c/) is used
-  to enable EditorConfig in Vim.
-* [nodenv](https://github.com/nodenv/nodenv/) is used for managing multiple
-  versions of Node.js.
-* [`tidy-html5`](http://www.html-tidy.org) is for use with
-  [Ale](https://github.com/w0rp/ale/) in Vim.
-* [`pandoc`](http://pandoc.org) is a neat document conversion tool.
 
 ### Extending `.vimrc`
 
-Create a new Vim plugin at the following path:
+Create a new Vim plugin:
 
 ```
-~/.vim/pack/dfranklinau-extends/start/dfranklinau/plugin/dfranklinau.vim
+~/.vim/pack/local/start/local/plugin/local.vim
 ```
 
-The `dfranklinau-extends` folder is ignored by Git so any changes to it will not
-create a diff in the repository.
+The `~/.vim/pack/local/` directory is ignored by Git so any changes will not be
+tracked.
 
-Machine-specific plugins can also be cloned into this repository and manually
-managed, i.e. added via `git clone` instead of `git submodule add`.
+
+### `.git-completion.bash` and `.git-prompt.sh`
+
+[`.git-completion.bash`](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash)
+adds functionality for auto completion with Git commands and branch names.
+
+[`.git-prompt.sh`](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)
+adds functionality for displaying the currently checked out Git branch in the
+prompt for quick reference.
+
+
+
+
+## Appendix
 
 ### Vim plugins
-
-I use the following Vim plugins:
 
 * [ale](https://github.com/w0rp/ale) 2.6.0 - linting and fixing.
 * [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) 1.80 - fuzzy file finding.
@@ -151,25 +127,18 @@ I use the following Vim plugins:
 * [vim-unimpaired](https://github.com/tpope/vim-unimpaired) 2.0 - all purpose
   shortcuts.
 
-### `.gitignore-template`
 
-I have purposely excluded copying a `.gitignore` from the installation script.
-Having a global ignore file is fine for personal projects but in a team
-environment it is optimal to include a local `.gitignore` with these rules to
-cater for everyone.
 
-The `.gitignore-template` in this repository provides a set of reasonable
-defaults (not to be confused with `.gitignore`, which has some settings
-specifically for this repository).
+### Recommended utilities
 
-### `.git-completion.bash` and `.git-prompt.sh`
+* [ack](https://beyondgrep.com) is used for searching through files.
+* [`bash-completion`](https://github.com/scop/bash-completion) is used for
+  adding auto completion support for various command line tools (e.g. Docker).
+* [editorconfig](https://github.com/editorconfig/editorconfig-core-c/) is used
+  to enable EditorConfig in Vim.
+* [nodenv](https://github.com/nodenv/nodenv/) is used for managing multiple
+  versions of Node.js.
+* [`tidy-html5`](http://www.html-tidy.org) is for use with
+  [Ale](https://github.com/w0rp/ale/) in Vim.
+* [`pandoc`](http://pandoc.org) is a neat document conversion tool.
 
-These **are not** written by me. They have been sourced from the official Git
-repository.
-
-[`.git-completion.bash`](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash)
-adds functionality for auto completion with Git commands and branch names.
-
-[`.git-prompt.sh`](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)
-adds functionality for displaying the currently checked out Git branch in the
-prompt for quick reference.
