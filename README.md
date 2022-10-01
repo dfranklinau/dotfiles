@@ -134,11 +134,8 @@ prompt for quick reference.
 * [ack](https://beyondgrep.com) is used for searching through files.
 * [`bash-completion`](https://github.com/scop/bash-completion) is used for
   adding auto completion support for various command line tools (e.g. Docker).
-* [editorconfig](https://github.com/editorconfig/editorconfig-core-c/) is used
-  to enable EditorConfig in Vim.
 * [nodenv](https://github.com/nodenv/nodenv/) is used for managing multiple
   versions of Node.js.
 * [`tidy-html5`](http://www.html-tidy.org) is for use with
   [Ale](https://github.com/w0rp/ale/) in Vim.
 * [`pandoc`](http://pandoc.org) is a neat document conversion tool.
-
