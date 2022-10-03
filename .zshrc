@@ -36,6 +36,10 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
+# Load Neovim.
+# https://github.com/neovim/neovim
+export PATH="$HOME/.nvim/bin:$PATH"
+
 # Load nodenv, a Node.js version manager, if it exists.
 # https://github.com/nodenv/nodenv
 export PATH="$HOME/.nodenv/bin:$PATH"
