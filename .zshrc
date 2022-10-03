@@ -36,9 +36,12 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-# Load Neovim.
+# Load Neovim and define aliases.
+# Use \vim to run Vim as normal.
 # https://github.com/neovim/neovim
 export PATH="$HOME/.nvim/bin:$PATH"
+alias vim="nvim"
+alias vi="nvim"
 
 # Load nodenv, a Node.js version manager, if it exists.
 # https://github.com/nodenv/nodenv
