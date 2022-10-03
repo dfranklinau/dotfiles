@@ -13,6 +13,7 @@ export PATH="$HOME/bin:$PATH"
 
 # Load Neovim and define aliases. Use `\vim` to run Vim as normal.
 # https://github.com/neovim/neovim
+# Run `\vim` to ignore the alias and load Vim as normal.
 export PATH="$HOME/.nvim/bin:$PATH"
 alias vim="nvim"
 alias vi="nvim"
