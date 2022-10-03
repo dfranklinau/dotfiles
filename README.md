@@ -5,9 +5,8 @@
 * [Introduction](#introduction)
 * [Installation](#installation)
 * [Usage](#usage)
-  * [Extending `.bashrc`](#extending-bashrc)
+  * [Extending `.zshrc`](#extending-zshrc)
   * [Extending `.vimrc`](#extending-vimrc)
-  * [`.git-completion.bash` and `.git-prompt.sh`](#git-completionbash-and-git-promptsh)
 * [Appendix](#appendix)
   * [Vim plugins](#vim-plugins)
   * [Recommended utilities](#recommended-utilities)
@@ -21,10 +20,8 @@
 This is a collection of files and configurations that I use on a day-to-day
 basis:
 
-* `.bash_profile` - redirects macOS to use `.bashrc`.
-* `.bashrc` - Bash configuration.
+* `.zshrc` - zsh configuration.
 * `.emacs` - Emacs configuration.
-* `.git-completion.bash` and `.git-prompt.sh` - Git helper scripts.
 * `.gitconfig` - Git aliases and configuration.
 * `.vim` - Vim plugins, syntax files and colour schemes.
 * `.vimrc` - Vim configuration.
@@ -65,12 +62,12 @@ important prior to running, in the off-chance something goes awry.
 
 ## Usage
 
-### Extending `.bashrc`
+### Extending `.zshrc`
 
 Create a new file:
 
 ```
-~/.bashrc-local
+~/.zshrc-local
 ```
 
 This file is ignored by Git so any changes will not be tracked.
@@ -87,15 +84,6 @@ Create a new Vim plugin:
 The `~/.vim/pack/local/` directory is ignored by Git so any changes will not be
 tracked.
 
-
-### `.git-completion.bash` and `.git-prompt.sh`
-
-[`.git-completion.bash`](https://github.com/git/git/blob/master/contrib/completion/git-completion.bash)
-adds functionality for auto completion with Git commands and branch names.
-
-[`.git-prompt.sh`](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)
-adds functionality for displaying the currently checked out Git branch in the
-prompt for quick reference.
 
 
 
@@ -132,8 +120,6 @@ prompt for quick reference.
 ### Recommended utilities
 
 * [ack](https://beyondgrep.com) is used for searching through files.
-* [`bash-completion`](https://github.com/scop/bash-completion) is used for
-  adding auto completion support for various command line tools (e.g. Docker).
 * [nodenv](https://github.com/nodenv/nodenv/) is used for managing multiple
   versions of Node.js.
 * [`tidy-html5`](http://www.html-tidy.org) is for use with

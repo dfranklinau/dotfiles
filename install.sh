@@ -14,14 +14,11 @@ src=~/.dotfiles
 backup=~/.dotfiles_backup
 dest=~
 dotfiles=(
-  ".bashrc"
-  ".bash_profile"
   ".emacs"
   ".gitconfig"
-  ".git-completion.bash"
-  ".git-prompt.sh"
   ".vimrc"
   ".vim"
+  ".zshrc"
 )
 
 
