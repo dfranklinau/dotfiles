@@ -99,6 +99,7 @@ tracked.
 * [emmet-vim](https://github.com/mattn/emmet-vim) master - HTML and CSS Emmet
 * [goyo.vim](https://github.com/junegunn/goyo.vim) master - provides a
   distraction-free writing experience in Vim; good for Markdown editing.
+* [gruvbox](https://github.com/morhetz/gruvbox) master - syntax theme.
 * [html5.vim](https://github.com/othree/html5.vim) master - HTML5 syntax.
 * [vim-commentary](https://github.com/tpope/vim-commentary) 1.3 - commenting
   shortcuts.

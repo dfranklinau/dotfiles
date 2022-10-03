@@ -205,10 +205,7 @@ command! Wqa wqa
 " Themes
 " =============================================================================
 
-" Enable the Zenburn Vim colour scheme and 256 colour mode.
-" https://github.com/jnurmine/Zenburn
-set t_Co=256
-colors zenburn
+autocmd vimenter * ++nested colorscheme gruvbox
 
 
 
@@ -232,9 +229,6 @@ set noruler
 " [9]  - Show the current cursor line and total lines.
 " [10] - Show the percentage scrolled.
 " [11] - Mark the column value of one tab.
-" [12] - Make the status line slightly personalised with a colour.
-"        Use the following as a colour guide:
-"        http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
 set statusline=%f\ -\                                      " [1]
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}]            " [2]
 set statusline+=%h                                         " [3]
@@ -246,4 +240,3 @@ set statusline+=%c%V:                                      " [8]
 set statusline+=%l/%L                                      " [9]
 set statusline+=\ %P                                       " [10]
 set softtabstop=2                                          " [11]
-hi StatusLine ctermfg=168 ctermbg=231                      " [12]
