@@ -123,7 +123,8 @@ configuration within `.zshrc` works.
 
 ### Recommended utilities
 
-* [ack](https://beyondgrep.com) is used for searching through files.
+* [ack](https://beyondgrep.com) is used for searching through files; I find it
+  easiest to install the single-file version under `~/bin/ack`.
 * [nodenv](https://github.com/nodenv/nodenv/) is used for managing multiple
   versions of Node.js.
 * [`tidy-html5`](http://www.html-tidy.org) is for use with
