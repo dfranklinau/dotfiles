@@ -8,6 +8,7 @@
   * [Extending `.zshrc`](#extending-zshrc)
   * [Extending `.vimrc`](#extending-vimrc)
 * [Appendix](#appendix)
+  * [Oh My Zsh](#oh-my-zsh)
   * [Vim plugins](#vim-plugins)
   * [Recommended utilities](#recommended-utilities)
 
@@ -20,7 +21,7 @@
 This is a collection of files and configurations that I use on a day-to-day
 basis:
 
-* `.zshrc` - zsh configuration.
+* `.zshrc` - zsh and Oh My Zsh configuration.
 * `.emacs` - Emacs configuration.
 * `.gitconfig` - Git aliases and configuration.
 * `.vim` - Vim plugins, syntax files and colour schemes.
@@ -72,7 +73,6 @@ Create a new file:
 
 This file is ignored by Git so any changes will not be tracked.
 
-
 ### Extending `.vimrc`
 
 Create a new Vim plugin:
@@ -89,6 +89,11 @@ tracked.
 
 
 ## Appendix
+
+### Oh My Zsh
+
+I use zsh coupled with [Oh My Zsh](https://ohmyz.sh/). Install it to ensure the
+configuration within `.zshrc` works.
 
 ### Vim plugins
 
@@ -115,8 +120,6 @@ tracked.
   parenthesising shortcuts.
 * [vim-unimpaired](https://github.com/tpope/vim-unimpaired) 2.0 - all purpose
   shortcuts.
-
-
 
 ### Recommended utilities
 
