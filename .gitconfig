@@ -75,6 +75,7 @@
 [core]
   editor = /usr/bin/vim
   excludesfile = ~/.gitignore
+  pager = less -F -X
 [branch]
   autosetuprebase = always
 [push]
