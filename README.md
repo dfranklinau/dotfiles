@@ -9,6 +9,7 @@
   * [Extending `.vimrc`](#extending-vimrc)
 * [Appendix](#appendix)
   * [Oh My Zsh](#oh-my-zsh)
+  * [`git-prompt.sh`](#gitpromptsh)
   * [Vim plugins](#vim-plugins)
   * [Recommended utilities](#recommended-utilities)
 
@@ -94,6 +95,12 @@ tracked.
 
 I use zsh coupled with [Oh My Zsh](https://ohmyz.sh/). Install it to ensure the
 configuration within `.zshrc` works.
+
+### `git-prompt.sh`
+
+[`git-prompt.sh`](https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh)
+adds functionality for displaying the currently checked out Git branch and
+status (e.g. if a merge or rebase is in progress) in the prompt.
 
 ### Vim plugins
 

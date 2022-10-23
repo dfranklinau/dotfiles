@@ -19,6 +19,7 @@ dotfiles=(
   ".vimrc"
   ".vim"
   ".zshrc"
+  "git-prompt.sh"
 )
 
 

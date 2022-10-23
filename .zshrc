@@ -8,6 +8,10 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
+# Load Git prompt support.
+source ~/git-prompt.sh
+precmd () { __git_ps1 "%n" ":%~$ " "|%s" }
+
 # Load any custom bin scripts, such as `ack.
 export PATH="$HOME/bin:$PATH"
 
