@@ -16,6 +16,9 @@
 # `mergetest`
 # Runs `git merge` with the `--no-commit` flag.
 #
+# `retro`
+# Displays two weeks worth of commit history. More fun than useful.
+#
 # `size`
 # Displays file size information for the repository.
 #
@@ -63,6 +66,7 @@
   rebc = rebase --continue
   rebi = rebase -i
   rebs = rebase --skip
+  retro = !git log --all --since='2 weeks ago' --author=$(git config user.email)
   s = status
   size = count-objects -vH
   sleuth = log --all --full-history
