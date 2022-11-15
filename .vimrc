@@ -6,6 +6,9 @@
 " Remove old legacy bits of Vim.
 set nocompatible
 
+" No more accidental mouse clicks moving my Vim cursor while typing.
+set mouse=
+
 " Prevent the `.vim/.netrwhist` file from being created, since I have no real
 " need for it (yet).
 let g:netrw_dirhistmax = 0
