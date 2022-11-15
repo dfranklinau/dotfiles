@@ -12,8 +12,16 @@
 # `retro`
 # Displays two weeks worth of commit history. More fun than useful.
 #
+# `sleuth`
+# E.g.: `git sleuth -- <file>`
+# See `where`. Performs an even deeper dive on a file in the repository across
+# all branches and all history, including deleted files.
+#
 # `size`
 # Displays file size information for the repository.
+#
+# `tag-sort`
+# Lists all Git tags by creation date.
 #
 # `tree`
 # Displays a log of commits, showing the title and body of all commits
@@ -25,18 +33,6 @@
 #
 # `tree-small`
 # See `tree`. Functions similarly, but only displays the title of each commit.
-#
-# `sleuth`
-# E.g.: `git sleuth -- <file>`
-# See `where`. Performs an even deeper dive on a file in the repository across
-# all branches and all history, including deleted files.
-#
-# `tag-sort`
-# Lists all Git tags by creation date.
-#
-# `tree`
-# Displays the history of the current branch in Git, including the title and
-# body of each commit.
 #
 # `undo`
 # Undo the last commit on the current branch, keeping all files intact.
