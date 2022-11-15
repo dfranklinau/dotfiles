@@ -31,7 +31,7 @@
 # See `where`. Performs an even deeper dive on a file in the repository across
 # all branches and all history, including deleted files.
 #
-# `tagsort`
+# `tag-sort`
 # Lists all Git tags by creation date.
 #
 # `tree`
@@ -71,7 +71,7 @@
   size = count-objects -vH
   sleuth = log --all --full-history
   su = status -u
-  tagsort = tag --sort=taggerdate
+  tag-sort = tag --sort=creatordate
   tree = log --pretty=format:'%C(yellow)commit %H%Creset%C(auto)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%C(magenta)%cr (%cD)%Creset%n%n%b' --graph
   undo = reset --soft HEAD~
   update = remote update --prune
