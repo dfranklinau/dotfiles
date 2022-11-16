@@ -55,6 +55,7 @@
   diffc = diff --cached
   last = log -1 --name-status
   mergetest = merge --no-commit
+  pushfwl = push --force-with-lease
   reb = rebase
   reba = rebase --abort
   rebc = rebase --continue
