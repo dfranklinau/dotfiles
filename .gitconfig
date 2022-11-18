@@ -23,16 +23,17 @@
 # `tag-sort`
 # Lists all Git tags by creation date.
 #
-# `tree`
-# Displays a log of commits, showing the title and body of all commits
-# (displayed in a branch structure).
+# `t`
+# Short for "tree". Displays a log of commits, showing the title and body of all
+# commits (displayed in a branch structure).
 #
-# `tree-big`
-# See `tree`. Functions similarly, but also displays a list of the files changed
-# in each commit.
+# `tb`
+# Short for "tree big". See `t`. Functions similarly, but also displays a list
+# of the files changed in each commit.
 #
-# `tree-small`
-# See `tree`. Functions similarly, but only displays the title of each commit.
+# `ts`
+# Short for "tree small". See `t`. Functions similarly, but only displays the
+# title of each commit.
 #
 # `undo`
 # Undo the last commit on the current branch, keeping all files intact.
@@ -67,9 +68,9 @@
   sleuth = log --all --full-history
   su = status -u
   tag-sort = tag --sort=creatordate
-  tree = log --pretty=format:'%C(yellow)commit %H%Creset%C(auto)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%C(magenta)%cr (%cD)%Creset%n%n%b' --graph
-  tree-big = log --pretty=format:'%C(yellow)commit %H%Creset%C(auto)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%C(magenta)%cr (%cD)%Creset%n%n%b' --name-status --graph
-  tree-small = log --oneline --graph
+  t = log --pretty=format:'%C(yellow)commit %H%Creset%C(auto)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%C(magenta)%cr (%cD)%Creset%n%n%b' --graph
+  tb = log --pretty=format:'%C(yellow)commit %H%Creset%C(auto)%d%Creset%nCommitter: %cn <%ce>%n%n%s%n%C(magenta)%cr (%cD)%Creset%n%n%b' --name-status --graph
+  ts = log --oneline --graph
   undo = reset --soft HEAD~
   update = remote update --prune
   where = log --pretty=format:'%C(magenta)%cr%Creset %C(yellow)%h%Creset%C(auto)%d%Creset%n%s%n' --branches --follow
