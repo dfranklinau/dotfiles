@@ -104,26 +104,24 @@ status (e.g. if a merge or rebase is in progress) in the prompt.
 
 ### Vim plugins
 
-* [ale](https://github.com/w0rp/ale) 2.6.0 - linting and fixing.
+* [ale](https://github.com/w0rp/ale) 3.3.0 - linting and fixing.
 * [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) 1.80 - fuzzy file finding.
-* [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) 1.1.1 -
+* [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) master -
   EditorConfig support.
 * [emmet-vim](https://github.com/mattn/emmet-vim) master - HTML and CSS Emmet
-* [goyo.vim](https://github.com/junegunn/goyo.vim) master - provides a
-  distraction-free writing experience in Vim; good for Markdown editing.
 * [gruvbox](https://github.com/morhetz/gruvbox) master - syntax theme.
 * [html5.vim](https://github.com/othree/html5.vim) master - HTML5 syntax.
 * [vim-commentary](https://github.com/tpope/vim-commentary) 1.3 - commenting
   shortcuts.
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter) master - inline Git
   diff tool.
-* [vim-matchit](https://github.com/adelarsq/vim-matchit) master - provides
-  extended matching for the `%` operator.
 * [vim-javascript](https://github.com/pangloss/vim-javascript) 1.2.5 -
   JavaScript syntax.
+* [vim-matchup](https://github.com/andymass/vim-matchup) 0.7.3 - provides
+  extended matching for the `%` operator.
 * [vim-repeat](https://github.com/tpope/vim-repeat) 1.2 - enables the `.` repeat
   command with supported plugins.
-* [vim-surround](https://github.com/tpope/vim-surround) 2.1 - quoting and
+* [vim-surround](https://github.com/tpope/vim-surround) 2.2 - quoting and
   parenthesising shortcuts.
 * [vim-unimpaired](https://github.com/tpope/vim-unimpaired) 2.0 - all purpose
   shortcuts.
