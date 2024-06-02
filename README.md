@@ -113,6 +113,8 @@ status (e.g. if a merge or rebase is in progress) in the prompt.
 * [html5.vim](https://github.com/othree/html5.vim) master - HTML5 syntax.
 * [vim-commentary](https://github.com/tpope/vim-commentary) 1.3 - commenting
   shortcuts.
+* [vim-fugitive](https://github.com/tpope/vim-fugitive) 3.7 - assorted
+  convenience commands, e.g. `blame` and `diff`.
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter) master - inline Git
   diff tool.
 * [vim-javascript](https://github.com/pangloss/vim-javascript) 1.2.5 -
