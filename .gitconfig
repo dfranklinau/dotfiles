@@ -48,7 +48,7 @@
 [alias]
   a = add
   ap = add --patch
-  b = branch
+  b = branch --column
   c = commit
   ca = commit --amend
   can = commit --amend --no-edit
