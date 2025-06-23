@@ -104,7 +104,7 @@ status (e.g. if a merge or rebase is in progress) in the prompt.
 
 ### Vim plugins
 
-* [ale](https://github.com/w0rp/ale) 3.3.0 - linting and fixing.
+* [ale](https://github.com/w0rp/ale) 4.0.0 - linting and fixing.
 * [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) 1.80 - fuzzy file finding.
 * [editorconfig-vim](https://github.com/editorconfig/editorconfig-vim) master -
   EditorConfig support.
