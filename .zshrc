@@ -21,13 +21,6 @@ GIT_PS1_SHOWCOLORHINTS=true
 # Load any custom bin scripts, such as `ack.
 export PATH="$HOME/bin:$PATH"
 
-# Load Neovim and define aliases. Use `\vim` to run Vim as normal.
-# https://github.com/neovim/neovim
-# Run `\vim` to ignore the alias and load Vim as normal.
-export PATH="$HOME/.nvim/bin:$PATH"
-alias vim="nvim"
-alias vi="nvim"
-
 # Load nodenv, a Node.js version manager, if it exists.
 # https://github.com/nodenv/nodenv
 export PATH="$HOME/.nodenv/bin:$PATH"

@@ -75,7 +75,7 @@
   update = remote update --prune
   where = log --pretty=format:'%C(magenta)%cr%Creset %C(yellow)%h%Creset%C(auto)%d%Creset%n%s%n' --branches --follow
 [core]
-  editor = nvim
+  editor = vim
   excludesfile = ~/.gitignore
   ignorecase = false
   pager = less -F -X
