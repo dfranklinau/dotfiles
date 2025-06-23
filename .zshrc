@@ -18,7 +18,7 @@ source ~/git-prompt.sh
 precmd () { __git_ps1 "~ %{$fg_bold[green]%}%n%{$reset_color%} %{$fg_bold[blue]%}git:(%{$reset_color%}" "%{$fg_bold[blue]%})%{$reset_color%} :: %{$fg_bold[cyan]%}%~%{$reset_color%} $ " "%s" }
 GIT_PS1_SHOWCOLORHINTS=true
 
-# Load any custom bin scripts, such as `ack.
+# Load any custom bin scripts, such as `ack` or `vim`.
 export PATH="$HOME/bin:$PATH"
 
 # Load nodenv, a Node.js version manager, if it exists.
