@@ -115,7 +115,7 @@ status (e.g. if a merge or rebase is in progress) in the prompt.
   shortcuts.
 * [vim-fugitive](https://github.com/tpope/vim-fugitive) 3.7 - assorted
   convenience commands, e.g. `blame` and `diff`.
-* [vim-gitgutter](https://github.com/airblade/vim-gitgutter) master - inline Git
+* [vim-gitgutter](https://github.com/airblade/vim-gitgutter) main - inline Git
   diff tool.
 * [vim-javascript](https://github.com/pangloss/vim-javascript) 1.2.5 -
   JavaScript syntax.
