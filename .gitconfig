@@ -63,7 +63,7 @@
   rebi = rebase -i
   rebs = rebase --skip
   retro = !git log --all --since='2 weeks ago' --author=$(git config user.email)
-  s = status
+  s = status -sb
   size = count-objects -vH
   sleuth = log --all --full-history
   su = status -u
