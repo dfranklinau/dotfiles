@@ -132,8 +132,8 @@ status (e.g. if a merge or rebase is in progress) in the prompt.
 
 * [ack](https://beyondgrep.com) is used for searching through files; I find it
   easiest to install the single-file version under `~/bin/ack`.
-* [nodenv](https://github.com/nodenv/nodenv/) is used for managing multiple
-  versions of Node.js.
+* [mise](https://mise.jdx.dev/) is used for managing versions of runtime
+  languages, e.g. Node.js.
 * [`tidy-html5`](http://www.html-tidy.org) is for use with
   [Ale](https://github.com/w0rp/ale/) in Vim.
 * [`pandoc`](http://pandoc.org) is a neat document conversion tool.

@@ -21,11 +21,6 @@ GIT_PS1_SHOWCOLORHINTS=true
 # Load any local scripts and/or overrides, such as `ack` or `vim`.
 export PATH="$HOME/local/bin:$PATH"
 
-# Load nodenv, a Node.js version manager, if it exists.
-# https://github.com/nodenv/nodenv
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
-
 # Include any local configuration.
 if [ -f ~/.zshrc-local ]; then
   source ~/.zshrc-local
