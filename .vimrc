@@ -208,8 +208,9 @@ command! Wqa wqa
 " Themes
 " =============================================================================
 
-" No themes set up. :(
-
+set termguicolors
+set background=dark
+autocmd vimenter * ++nested colorscheme gruvbox
 
 
 
