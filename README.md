@@ -80,7 +80,7 @@ This file is ignored by Git so any changes will not be tracked.
 Create a new Vim plugin:
 
 ```
-~/.vim/pack/local/start/local/plugin/local.vim
+~/.vim/pack/local/start/local.vim
 ```
 
 The `~/.vim/pack/local/` directory is ignored by Git so any changes will not be
