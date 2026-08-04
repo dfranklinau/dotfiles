@@ -103,7 +103,23 @@ configuration within `.zshrc` works.
 adds functionality for displaying the currently checked out Git branch and
 status (e.g. if a merge or rebase is in progress) in the prompt.
 
-### Vim plugins
+### Vim
+
+#### Clipboard
+
+Depending on the operating system, specify clipboard support using
+`.vimrc-local` as follows:
+
+```vim
+# When Neovim's `:checkhealth` reports a clipboard tool but attempting to use it
+# throws the W24 error.
+set clipboard = "xclip"
+```
+
+For macOS, which supports `pbcopy` and `pbpaste`, no extra configuration should
+be needed.
+
+#### Vim plugins
 
 * [ale](https://github.com/w0rp/ale) master - linting and fixing.
 * [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim) 1.80 - fuzzy file finding.
