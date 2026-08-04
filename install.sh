@@ -9,11 +9,14 @@
 # target directory may need to be removed.
 ################################################################################
 
+TS=$(date +%Y%m%d%H%M%S)
+SOURCE="$HOME/.dotfiles"
+TARGET="$HOME"
+BACKUP="$TARGET/.dotfiles-backup.$TS"
 
-src=~/.dotfiles
-backup=~/.dotfiles_backup
-dest=~
-dotfiles=(
+# All of the files and directories to be linked.
+ITEMS=(
+  ".config/nvim"
   ".emacs"
   ".gitconfig"
   ".vimrc"
@@ -22,43 +25,29 @@ dotfiles=(
   "git-prompt.sh"
 )
 
+# Set to 0 to allow overwriting without backups.
+ENABLE_BACKUP=1
 
-# Warn the user about cleaning the '~/.dotfiles_backup' folder.
-if [ -d $backup ]; then
+for item in "${ITEMS[@]}"; do
+  src="$SOURCE/$item"
+  dst="$TARGET/$item"
 
-  read -p "The '~/.dotfiles_backup' folder already exists. For this script to work, the folder will need to be emptied in the event of a file name collision. Are you sure you want to DELETE EVERY FILE from '~./dotfiles_backup'? (y/n) "
-  echo # Add a blank line for breathing space.
+  # Ensure the parent directory for the destination exists.
+  dst_parent=$(dirname "$dst")
+  mkdir -p "$dst_parent"
 
-  if [[ $REPLY =~ ^[Yy]$ ]]; then
-    rm -rf $backup
-    mkdir $backup
-  else
-    exit 0
+  # Remove the destination if it exists, creating a backup if enabled.
+  if [ -e "$dst" ] || [ -L "$dst" ]; then
+    if [ "$ENABLE_BACKUP" -eq 1 ]; then
+      dst_backup="$BACKUP/$item"
+      mkdir -p "$(dirname "$dst_backup")"
+      mv "$dst" "$dst_backup"
+    else
+      echo "rm -rf "$dst""
+    fi
   fi
 
-else
-
-  mkdir $backup
-
-fi
-
-
-# Create a symbolic link from '~/.dotfiles' to '~/' for all files. Backup any
-# files that may have the same filename in '~./dotfiles_backup'.
-for dotfile in ${dotfiles[@]}; do
-
-  echo "Linking '~/.dotfiles/$dotfile' to '~/$dotfile'..."
-
-  if [ -f $dest/$dotfile ]; then
-    echo "Oh, '$dotfile' already exists. Moving it to '~./dotfiles_backup/$dotfile'."
-    mv $dest/$dotfile $backup/
-  fi
-
-  ln -s $src/$dotfile $dest/$dotfile
-
-  echo "Linked '~/.dotfiles/$dotfile'."
-  echo # Add a blank line for breathing space.
-
+  # Create a symbolic link.
+  ln -s "$src" "$dst"
+  echo "Linked: $dst -> $src"
 done
-
-echo "All dotfiles have been linked, hooray."
