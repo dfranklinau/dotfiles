@@ -27,7 +27,7 @@ basis:
 * `.gitconfig` - Git aliases and configuration.
 * `.vim` - Vim plugins, syntax files and colour schemes.
 * `.vimrc` - Vim configuration.
-* `.config/nvim/init.vim` - NeoVim configuration the imports `.vim`.
+* `.config/nvim` - NeoVim configuration that extends `.vimrc`.
 
 Template files are also included. These are intended to be copied across to new
 projects where needed and serve as a reference:
