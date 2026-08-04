@@ -27,6 +27,7 @@ basis:
 * `.gitconfig` - Git aliases and configuration.
 * `.vim` - Vim plugins, syntax files and colour schemes.
 * `.vimrc` - Vim configuration.
+* `.config/nvim/init.vim` - NeoVim configuration the imports `.vim`.
 
 Template files are also included. These are intended to be copied across to new
 projects where needed and serve as a reference:
@@ -134,6 +135,7 @@ status (e.g. if a merge or rebase is in progress) in the prompt.
   easiest to install the single-file version under `~/bin/ack`.
 * [mise](https://mise.jdx.dev/) is used for managing versions of runtime
   languages, e.g. Node.js.
+* [Neovim](https://neovim.io/) for a drop-in Vim replacement, where available.
 * [`tidy-html5`](http://www.html-tidy.org) is for use with
   [Ale](https://github.com/w0rp/ale/) in Vim.
 * [`pandoc`](http://pandoc.org) is a neat document conversion tool.
