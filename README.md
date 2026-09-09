@@ -8,7 +8,6 @@
   * [Extending `.zshrc`](#extending-zshrc)
   * [Extending `.vimrc`](#extending-vimrc)
 * [Appendix](#appendix)
-  * [Oh My Zsh](#oh-my-zsh)
   * [`git-prompt.sh`](#gitpromptsh)
   * [Vim](#vim)
     * [Clipboard support](#clipboard-support)
@@ -26,7 +25,7 @@
 This is a collection of files and configurations that I use on a day-to-day
 basis:
 
-* `.zshrc` - zsh and Oh My Zsh configuration.
+* `.zshrc` - zsh configuration.
 * `.emacs` - Emacs configuration.
 * `.gitconfig` - Git aliases and configuration.
 * `.vim` - Vim plugins, syntax files and colour schemes.
@@ -100,11 +99,6 @@ tracked.
 
 
 ## Appendix
-
-### Oh My Zsh
-
-I use zsh coupled with [Oh My Zsh](https://ohmyz.sh/). Install it to ensure the
-configuration within `.zshrc` works.
 
 ### `git-prompt.sh`
 
