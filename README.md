@@ -10,7 +10,9 @@
 * [Appendix](#appendix)
   * [Oh My Zsh](#oh-my-zsh)
   * [`git-prompt.sh`](#gitpromptsh)
-  * [Vim plugins](#vim-plugins)
+  * [Vim](#vim)
+    * [Clipboard support](#clipboard-support)
+    * [Vim plugins](#vim-plugins)
   * [Recommended utilities](#recommended-utilities)
 
 
@@ -73,7 +75,12 @@ Create a new file:
 ~/.zshrc-local
 ```
 
-This file is ignored by Git so any changes will not be tracked.
+A common use is to modify the PATH:
+
+```zsh .zsrch-local
+# Load local binaries or override built-in binaries.
+export PATH="$HOME/local/bin:$PATH"
+```
 
 ### Extending `.vimrc`
 
@@ -105,7 +112,7 @@ status (e.g. if a merge or rebase is in progress) in the prompt.
 
 ### Vim
 
-#### Clipboard
+#### Clipboard support
 
 Depending on the operating system, specify clipboard support using
 `.vimrc-local` as follows:
