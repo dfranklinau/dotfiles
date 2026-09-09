@@ -112,6 +112,9 @@ configuration within `.zshrc` works.
 adds functionality for displaying the currently checked out Git branch and
 status (e.g. if a merge or rebase is in progress) in the prompt.
 
+There are alternatives such as the `vcs_info` module in `zsh` but I have opted
+for `git-prompt.sh` because "it works".
+
 ### Vim
 
 #### Clipboard support
