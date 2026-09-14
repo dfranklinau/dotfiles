@@ -50,7 +50,7 @@ projects where needed and serve as a reference:
 
 Clone the repository to `~/.dotfiles` and run the installation script:
 
-```
+```shell
 cd ~
 git clone git@github.com:dfranklinau/dotfiles.git .dotfiles
 cd .dotfiles
@@ -73,8 +73,8 @@ important prior to running, in the off-chance something goes awry.
 
 Create a new file:
 
-```
-~/.zshrc-local
+```shell
+touch ~/.zshrc-local
 ```
 
 A common use is to modify the PATH:
@@ -88,8 +88,8 @@ export PATH="$HOME/local/bin:$PATH"
 
 Create a new Vim plugin:
 
-```
-~/.vim/pack/local/start/local.vim
+```shell
+touch ~/.vim/pack/local/start/local.vim
 ```
 
 The `~/.vim/pack/local/` directory is ignored by Git so any changes will not be
@@ -125,7 +125,7 @@ for `git-prompt.sh` because "it works".
 Depending on the operating system, specify clipboard support using
 `.vimrc-local` as follows:
 
-```vim
+```vimrc .vimrc-local
 # When Neovim's `:checkhealth` reports a clipboard tool but attempting to use it
 # throws the W24 error.
 set clipboard = "xclip"
