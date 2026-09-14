@@ -11,7 +11,7 @@ compinit
 # Customise the zsh prompt.
 source ~/git-prompt.sh
 GIT_PS1_SHOWCOLORHINTS=true
-precmd () { __git_ps1 "%n :: %~" " $ " " (%s)" }
+precmd () { __git_ps1 "%B%F{green}%n%f %F{cyan}%~%f%b" " $ " " (%s)" }
 
 # Include any local configuration.
 if [ -f ~/.zshrc-local ]; then
