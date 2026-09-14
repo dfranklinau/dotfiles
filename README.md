@@ -8,6 +8,7 @@
   * [Extending `.zshrc`](#extending-zshrc)
   * [Extending `.vimrc`](#extending-vimrc)
 * [Appendix](#appendix)
+  * [ack installation](#ack-installation)
   * [`git-prompt.sh`](#gitpromptsh)
   * [Vim](#vim)
     * [Clipboard support](#clipboard-support)
@@ -99,6 +100,14 @@ tracked.
 
 
 ## Appendix
+
+### ack installation
+
+ack's installation is portable when following [Install the ack
+executable](https://beyondgrep.com/install/).
+
+Replace `~/bin/ack` with any folder already in the `$PATH` (e.g.
+`~/.local/bin`).
 
 ### `git-prompt.sh`
 
