@@ -12,7 +12,7 @@ compinit
 source ~/git-prompt.sh
 GIT_PS1_SHOWCOLORHINTS=true
 RPROMPT="%F{cyan}%T%f"
-precmd () { __git_ps1 "%B%F{green}%n%f %F{cyan}%~%f%b" " $ " " (%s)" }
+precmd () { __git_ps1 "%B%F{cyan}%~%f%b" " $ " " (%s)" }
 
 # Include any local configuration.
 if [ -f ~/.zshrc-local ]; then
