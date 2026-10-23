@@ -13,8 +13,6 @@
   * [Vim](#vim)
     * [Clipboard support](#clipboard-support)
     * [Vim plugins](#vim-plugins)
-  * [NeoVim](#neovim)
-    * [Language Server Protocols](#language-server-protocols)
   * [Recommended utilities](#recommended-utilities)
 
 
@@ -31,7 +29,6 @@ basis:
 * `.gitconfig` - Git aliases and configuration.
 * `.vim` - Vim plugins, syntax files and colour schemes.
 * `.vimrc` - Vim configuration.
-* `.config/nvim` - NeoVim configuration that extends `.vimrc`.
 
 Template files are also included. These are intended to be copied across to new
 projects where needed and serve as a reference:
@@ -159,26 +156,6 @@ be needed.
   parenthesising shortcuts.
 * [vim-unimpaired](https://github.com/tpope/vim-unimpaired) 2.0 - all purpose
   shortcuts.
-
-### NeoVim
-
-#### Language Server Protocols
-
-Enable Language Server Protocols by creating a NeoVim plugin:
-
-```lua .config/nvim/plugin/lsp.lua
--- Enable Language Server Protocols (LSP)
-vim.lsp.enable('tsserver')
-
--- TypeScript.
-vim.lsp.config('tsserver', {
-  -- Ensure this has been installed globally via npm.
-  cmd = {'typescript-language-server', '--stdio'},
-  filetypes = { 'typescript' },
-  -- This is a hint to tell nvim to find the project root from a file within the tree.
-  root_dir = vim.fs.root(0, {'package.json', '.git'})
-})
-```
 
 ### Recommended utilities
 
