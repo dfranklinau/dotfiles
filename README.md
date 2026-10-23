@@ -131,6 +131,50 @@ set clipboard = "xclip"
 For macOS, which supports `pbcopy` and `pbpaste`, no extra configuration should
 be needed.
 
+#### `tsserver` support
+
+```vim
+call ale#Set('typescript_tsc_executable', 'tsc')   " fallback: `tsc` on $PATH
+call ale#Set('typescript_tsc_use_global', get(g:, 'ale_use_global_executables', 0))
+
+function! s:TscExecutable(buffer) abort
+    return ale#path#FindExecutable(a:buffer, 'typescript_tsc', ['node_modules/.bin/tsc'])
+endfunction
+
+function! s:TscProjectRoot(buffer) abort
+  for l:marker in ['tsconfig.json', 'package.json']
+    let l:found = ale#path#FindNearestFile(a:buffer, l:marker)
+    if !empty(l:found)
+      return fnamemodify(l:found, ':h')
+    endif
+  endfor
+  return ''
+endfunction
+
+for s:ft in ['typescript', 'typescriptreact']
+  call ale#linter#Define(s:ft, {
+    \   'name': 'tsc_lsp',
+    \   'lsp': 'stdio',
+    \   'executable': function('s:TscExecutable'),
+    \   'command': '%e --lsp --stdio',
+    \   'project_root': function('s:TscProjectRoot'),
+    \})
+endfor
+
+let g:ale_linters = {
+  \   'typescript':      ['tsc_lsp', 'biome'],
+  \   'typescriptreact': ['tsc_lsp', 'biome'],
+  \}
+
+let g:ale_linters_explicit = 1
+
+let g:ale_fixers = {
+  \   'typescript':      ['biome'],
+  \   'typescriptreact': ['biome'],
+  \}
+let g:ale_fix_on_save = 1
+```
+
 #### Vim plugins
 
 * [ale](https://github.com/w0rp/ale) master - linting and fixing.
