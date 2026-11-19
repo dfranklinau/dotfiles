@@ -9,6 +9,7 @@
   * [Extending `.vimrc`](#extending-vimrc)
 * [Appendix](#appendix)
   * [ack installation](#ack-installation)
+  * [Global `.gitignore`](#global-.gitignore)
   * [`git-prompt.sh`](#gitpromptsh)
   * [Vim](#vim)
     * [Clipboard support](#clipboard-support)
@@ -105,6 +106,16 @@ executable](https://beyondgrep.com/install/).
 
 Replace `~/bin/ack` with any folder already in the `$PATH` (e.g.
 `~/.local/bin`).
+
+### Global `.gitignore`
+
+Copy `.gitignore.template` or create a symbolic link to the home directory. The
+provided `.gitconfig` points to an exclude file at `~/.gitignore`, so copy or
+create a link to this destination, e.g.:
+
+```shell
+ln -s ~/.dotfiles/.gitignore.template ~/.gitignore
+```
 
 ### `git-prompt.sh`
 
